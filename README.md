@@ -5,7 +5,7 @@ End-to-end football analytics warehouse on Google BigQuery using dbt and GitHub 
 **Scope**
 
 - Competition: English Premier League
-- Seasons: 2016–17 → 2024–25
+- Seasons: 2014–15 → 2024–25
 - Source: [openfootball/football.json](https://github.com/openfootball/football.json)
 - Tech: BigQuery (sandbox), dbt-core, dbt-bigquery, GitHub Actions CI
 
