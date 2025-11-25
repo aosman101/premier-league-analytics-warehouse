@@ -1,0 +1,43 @@
+version: 2
+
+sources:
+  - name: football_raw
+    database: "{{ target.project }}"
+    schema: football_raw
+    tables:
+      - name: pl_matches
+        description: "Raw Premier League matches from openfootball (2016-17 to 2024-25)."
+
+models:
+  - name: stg_pl_matches
+    description: "Cleaned matches with typed columns and basic derived fields."
+    columns:
+      - name: match_id
+        tests: [unique, not_null]
+      - name: match_date
+        tests: [not_null]
+      - name: home_team_name
+        tests: [not_null]
+      - name: away_team_name
+        tests: [not_null]
+
+  - name: dim_team
+    columns:
+      - name: team_id
+        tests: [unique, not_null]
+
+  - name: fct_match_results
+    columns:
+      - name: match_id
+        tests:
+          - unique
+          - not_null
+      - name: result
+        tests:
+          - accepted_values:
+              values: ["H", "A", "D"]
+
+  - name: fct_team_season_stats
+    tests:
+      - unique:
+          column_name: "team_id || '-' || season"
