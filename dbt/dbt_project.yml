@@ -1,0 +1,19 @@
+name: "premier_league_analytics"
+version: "1.0.0"
+config-version: 2
+
+profile: "premier_league_analytics"
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  premier_league_analytics:
+    staging:
+      +schema: "football_analytics_staging"
+      +materialized: "view"
+    marts:
+      +schema: "football_analytics"
+      +materialized: "table"
