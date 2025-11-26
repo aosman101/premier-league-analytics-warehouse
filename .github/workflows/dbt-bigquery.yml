@@ -12,11 +12,16 @@ jobs:
 
     env:
       GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+      GCP_SERVICE_ACCOUNT_FILE: ${{ github.workspace }}/ci/gcp-key.json
       DBT_PROFILES_DIR: ${{ github.workspace }}/ci
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Write service account key to file
+        run: |
+          echo "${GCP_SERVICE_ACCOUNT_KEY}" > "${GCP_SERVICE_ACCOUNT_FILE}"
 
       - name: Set up Python
         uses: actions/setup-python@v5

@@ -3,8 +3,8 @@ premier_league_analytics:
   outputs:
     ci:
       type: bigquery
-      method: service-account-json
-      keyfile_json: "{{ env_var('GCP_SERVICE_ACCOUNT_KEY') }}"
+      method: service-account
+      keyfile: "{{ env_var('GCP_SERVICE_ACCOUNT_FILE') }}"
       project: "pl-football-analytics"
       dataset: "football_analytics"
       location: "EU"

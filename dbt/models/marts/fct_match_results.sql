@@ -53,4 +53,4 @@ results as (
 
 )
 
-select * from results;
+select * from results

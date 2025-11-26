@@ -35,7 +35,7 @@ typed as (
       round_number,
       round_name,
       match_num,
-      parse_date('%Y-%m-%d', date) as match_date,
+      safe_cast(date as date) as match_date,
       time as match_time,
 
       home_team_name,
@@ -52,7 +52,9 @@ typed as (
       city,
       `group` as round_group
     from raw
+    where season is not null
+      and match_num is not null
 
 )
 
-select * from typed;
+select * from typed

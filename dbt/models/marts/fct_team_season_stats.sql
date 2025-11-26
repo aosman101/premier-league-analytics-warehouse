@@ -60,4 +60,4 @@ agg as (
       season_end_year
 )
 
-select * from agg;
+select * from agg
