@@ -1,0 +1,40 @@
+name: dbt BigQuery CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  dbt-build:
+    runs-on: ubuntu-latest
+
+    env:
+      GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+      DBT_PROFILES_DIR: ${{ github.workspace }}/ci
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dbt-bigquery
+        run: |
+          python -m pip install --upgrade pip
+          pip install dbt-bigquery
+
+      - name: Verify dbt version
+        run: dbt --version
+
+      - name: Run dbt deps
+        working-directory: ./dbt
+        run: dbt deps
+
+      - name: Run dbt build (models + tests)
+        working-directory: ./dbt
+        run: dbt build --target ci
