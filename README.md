@@ -1,58 +1,53 @@
 # Premier League Analytics Warehouse (BigQuery + dbt)
 
-End-to-end football analytics on Google BigQuery with dbt. Data flows from openfootball JSON into a clean staging layer and marts covering teams, matches, and season stats.
+End-to-end football analytics on Google BigQuery with dbt. The stack pulls Premier League match JSON from openfootball, lands it in BigQuery, and builds cleaned staging + marts for teams, matches, and season stats.
 
-## Scope at a glance
-- Competition: English Premier League (2014–15 → 2024–25)
-- Source: [openfootball/football.json](https://github.com/openfootball/football.json)
-- Stack: BigQuery, dbt-core, dbt-bigquery, GitHub Actions CI profile ready
+## What’s here now
+- Seasons: English Premier League 2014–15 → 2024–25 (JSON lives in `data/football.json/`).
+- Extractor: `scripts/extract_openfootball_pl.py` writes `data/openfootball_pl_matches.ndjson`.
+- Raw table target: `football_raw.pl_matches` in BigQuery (loaded from the NDJSON).
+- dbt models: `stg_pl_matches`, `dim_team`, `fct_match_results`, `fct_team_season_stats` plus schema tests.
+- CI profile: `ci/profiles.yml` (BigQuery; service-account path from `GCP_SERVICE_ACCOUNT_FILE`).
+- Hygiene: virtualenvs/dbt logs/logs ignored via `.gitignore` to keep secrets/artifacts out of Git.
 
 ## Data flow
 ```text
-openfootball JSON (extracted via scripts/)
-        ↓
+openfootball JSON (data/football.json)
+        │  python scripts/extract_openfootball_pl.py
+        ▼
+openfootball_pl_matches.ndjson (local)
+        │  bq load --autodetect
+        ▼
 football_raw.pl_matches (BigQuery raw)
-        ↓  dbt staging
+        │  dbt run
+        ▼
 stg_pl_matches
-        ↓  dbt marts
-dim_team, fct_match_results, fct_team_season_stats
+        │
+        ├─ dim_team
+        ├─ fct_match_results
+        └─ fct_team_season_stats
 ```
 
-## Project layout
-```text
-premier-league-analytics-warehouse/
-├─ README.md
-├─ requirements.txt
-├─ scripts/
-│  └─ extract_openfootball_pl.py
-├─ data/                      # local raw files (.gitignored)
-├─ dbt/
-│  ├─ dbt_project.yml
-│  └─ models/
-│     ├─ schema.yml           # sources + tests
-│     ├─ staging/
-│     │  └─ stg_pl_matches.sql
-│     └─ marts/
-│        ├─ dim_team.sql
-│        ├─ fct_match_results.sql
-│        └─ fct_team_season_stats.sql
-└─ ci/
-   └─ profiles.yml            # CI-only dbt profile (BigQuery)
-```
-
-## Models in place
-- `stg_pl_matches`: types raw match fields, builds stable `match_id`, parses dates, and exposes cleaned columns.
-- `dim_team`: distinct team dimension (home/away union) with generated `team_id`.
-- `fct_match_results`: match-level fact with team ids, results (H/A/D), and match points.
-- `fct_team_season_stats`: per-team, per-season rollups for matches, results, goals, and points.
-- `schema.yml`: source definition for `football_raw.pl_matches` plus tests on the above models.
-
-## Local setup
-1) Install deps (Python 3.11+):
+## Quickstart (copy/paste friendly)
 ```bash
+# 1) Create a virtualenv and install deps (Python 3.11+)
+python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+
+# 2) Extract raw matches from openfootball JSON to NDJSON
+python scripts/extract_openfootball_pl.py
+# -> writes data/openfootball_pl_matches.ndjson
+
+# 3) Create BigQuery datasets (adjust location if needed)
+bq --location=EU mk -d football_raw || true
+bq --location=EU mk -d football_analytics || true
+
+# 4) Load raw data into BigQuery
+bq load --source_format=NEWLINE_DELIMITED_JSON --autodetect \
+  football_raw.pl_matches ./data/openfootball_pl_matches.ndjson
+
+# 5) Configure dbt profile (~/.dbt/profiles.yml)
 ```
-2) Configure dbt profile for development (`~/.dbt/profiles.yml`):
 ```yaml
 premier_league_analytics:
   target: dev
@@ -60,32 +55,52 @@ premier_league_analytics:
     dev:
       type: bigquery
       method: service-account
-      keyfile: "/absolute/path/to/your/service-account.json"
+      keyfile: "/absolute/path/to/your/service-account.json"  # or path from env
       project: "pl-football-analytics"
       dataset: "football_analytics"
       location: "EU"
       threads: 4
       priority: interactive
 ```
-
-## Running dbt locally
 ```bash
+# 6) Build + test
 cd dbt
-dbt run       # build staging + marts
-dbt test      # run schema tests
-dbt run --select stg_pl_matches dim_team fct_match_results fct_team_season_stats
+dbt build   # run + test
+# or
+dbt run
+dbt test
 ```
 
-## CI profile (GitHub Actions ready)
-- File: `ci/profiles.yml`
-- Uses `premier_league_analytics` target `ci` with `service-account-json`.
-- Reads the service account JSON from an environment variable: `7d994e79a010ca9c0ee90da958543c43d7d6a6fc`.
-- Example invocation in CI:
+## dbt models (what they do)
+- `stg_pl_matches`: cleans/types raw fields, parses dates/times, and builds stable `match_id`.
+- `dim_team`: distinct team dimension (home/away union) with generated UUID `team_id`.
+- `fct_match_results`: match-level fact with team ids, result flag (H/A/D), and points.
+- `fct_team_season_stats`: per-team, per-season aggregates (matches, wins/draws/losses, goals, points).
+- `schema.yml`: source definition for `football_raw.pl_matches` plus tests on the above models.
+
+## CI usage
+- Profile: `ci/profiles.yml` (target `ci`) expects `GCP_SERVICE_ACCOUNT_FILE` env var pointing to the service account JSON file path.
+- Example (GitHub Actions step):
 ```bash
-dbt run --profiles-dir ci --target ci
-dbt test --profiles-dir ci --target ci
+dbt build --profiles-dir ci --target ci
 ```
 
-## What’s next?
-- Add a `.github/workflows` pipeline to run `dbt run`/`dbt test` using `ci/profiles.yml`.
-- Expand marts (form tables, player stats) and add coverage tests/alerts.
+## Repository layout (high level)
+```text
+premier-league-analytics-warehouse/
+├─ README.md
+├─ requirements.txt
+├─ scripts/
+│  └─ extract_openfootball_pl.py
+├─ data/                      # openfootball JSON + generated NDJSON
+├─ dbt/
+│  ├─ dbt_project.yml
+│  └─ models/ (staging + marts + schema tests)
+└─ ci/
+   └─ profiles.yml            # CI dbt profile (BigQuery)
+```
+
+## Tips & hygiene
+- Keep secrets out of Git: rely on `GCP_SERVICE_ACCOUNT_FILE` and never commit service-account keys.
+- Virtualenvs, dbt targets, and logs are ignored via `.gitignore`; keep using them to avoid noisy commits.
+- When adding new models, prefer `dbt build --select new_model+` to include downstream dependencies and tests.
