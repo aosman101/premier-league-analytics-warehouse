@@ -60,8 +60,8 @@ agg as (
       season_end_year
 )
 
-select * from agg
-  ,
+select
+  agg.*,
   date(season_start_year, 8, 1) as season_start_date,
   date(season_end_year, 5, 31) as season_end_date
 from agg

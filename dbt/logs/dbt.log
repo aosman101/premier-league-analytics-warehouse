@@ -6630,3 +6630,355 @@ Parsing Error
 [0m19:05:19.032284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cd2ec90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cd2ccd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085f19d0>]}
 [0m19:05:19.034059 [debug] [MainThread]: Flushing usage events
 [0m19:05:19.500590 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:06:57.476918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e57e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108eb2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ecbf50>]}
+
+
+============================== 19:06:57.490681 | b58f277f-6ca7-48f9-b39b-e6ab957b1a69 ==============================
+[0m19:06:57.490681 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:06:57.492571 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'log_cache_events': 'False', 'no_print': 'None', 'version_check': 'True', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'introspect': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select fct_team_season_stats', 'use_experimental_parser': 'False', 'write_json': 'True', 'quiet': 'False', 'log_format': 'default', 'partial_parse': 'True', 'target_path': 'None', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/adilosman/.dbt', 'empty': 'False', 'printer_width': '80', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m19:07:08.354939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b58f277f-6ca7-48f9-b39b-e6ab957b1a69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e52ad0>]}
+[0m19:07:08.518046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b58f277f-6ca7-48f9-b39b-e6ab957b1a69', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10643dd50>]}
+[0m19:07:08.519177 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:07:09.440713 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m19:07:10.054217 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m19:07:10.055555 [debug] [MainThread]: Partial parsing: added file: premier_league_analytics://models/marts/metrics.yml
+[0m19:07:10.056701 [debug] [MainThread]: Partial parsing: updated file: premier_league_analytics://models/marts/fct_team_season_stats.sql
+[0m19:07:10.666946 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid metrics config given in FilePath(searched_path='models', relative_path='marts/metrics.yml', modification_time=1764270396.4110308, project_root='/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt') @ metrics: {'name': 'avg_goals_per_match', 'label': 'Avg goals per match', 'description': 'Average goals scored per match by team and season.', 'type': 'ratio', 'numerator': 'goals_for_total', 'denominator': 'matches_played_total', 'type_params': {'numerator_aggregation': 'sum', 'denominator_aggregation': 'sum'}} - at path ['type_params']: Additional properties are not allowed ('denominator_aggregation', 'numerator_aggregation' were unexpected)
+[0m19:07:10.693512 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 13.373628, "process_in_blocks": "0", "process_kernel_time": 2.216323, "process_mem_max_rss": "367824896", "process_out_blocks": "0", "process_user_time": 7.374137}
+[0m19:07:10.695082 [debug] [MainThread]: Command `dbt run` failed at 19:07:10.694834 after 13.38 seconds
+[0m19:07:10.695963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063efa10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046be750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11bc40850>]}
+[0m19:07:10.696868 [debug] [MainThread]: Flushing usage events
+[0m19:07:11.169650 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:07:33.929307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bb55d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bc2790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c3f950>]}
+
+
+============================== 19:07:33.946427 | 6cc674ab-e2aa-4465-b92a-4ca0cecb1d15 ==============================
+[0m19:07:33.946427 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:07:33.953204 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'use_experimental_parser': 'False', 'printer_width': '80', 'partial_parse': 'True', 'write_json': 'True', 'target_path': 'None', 'use_colors': 'True', 'static_parser': 'True', 'quiet': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/adilosman/.dbt', 'log_cache_events': 'False', 'version_check': 'True', 'debug': 'False', 'empty': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'introspect': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select fct_team_season_stats'}
+[0m19:07:47.667778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6cc674ab-e2aa-4465-b92a-4ca0cecb1d15', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1192e25d0>]}
+[0m19:07:47.837678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6cc674ab-e2aa-4465-b92a-4ca0cecb1d15', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041a9990>]}
+[0m19:07:47.838752 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:07:48.670822 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m19:07:49.352645 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m19:07:49.356032 [debug] [MainThread]: Partial parsing: added file: premier_league_analytics://models/marts/metrics.yml
+[0m19:07:49.359717 [debug] [MainThread]: Partial parsing: updated file: premier_league_analytics://models/marts/fct_team_season_stats.sql
+[0m19:07:50.104323 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Invalid metrics config given in FilePath(searched_path='models', relative_path='marts/metrics.yml', modification_time=1764270442.496803, project_root='/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt') @ metrics: {'name': 'avg_goals_per_match', 'label': 'Avg goals per match', 'description': 'Average goals scored per match by team and season.', 'type': 'ratio', 'numerator': 'goals_for_total', 'denominator': 'matches_played_total'} - at path []: Additional properties are not allowed ('denominator', 'numerator' were unexpected)
+[0m19:07:50.133119 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 16.405632, "process_in_blocks": "0", "process_kernel_time": 2.798235, "process_mem_max_rss": "367865856", "process_out_blocks": "0", "process_user_time": 9.913653}
+[0m19:07:50.135549 [debug] [MainThread]: Command `dbt run` failed at 19:07:50.135175 after 16.41 seconds
+[0m19:07:50.136940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c3f990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c3f390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11933c850>]}
+[0m19:07:50.142722 [debug] [MainThread]: Flushing usage events
+[0m19:07:50.584288 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:08:18.107868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109205d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091d58d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109213fd0>]}
+
+
+============================== 19:08:18.169173 | 433e4f03-221c-4317-8595-599e6e228d5a ==============================
+[0m19:08:18.169173 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:08:18.171598 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'profiles_dir': '/Users/adilosman/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'write_json': 'True', 'empty': 'False', 'target_path': 'None', 'printer_width': '80', 'static_parser': 'True', 'cache_selected_only': 'False', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'use_colors': 'True', 'invocation_command': 'dbt run --select fct_team_season_stats', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'fail_fast': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'partial_parse': 'True'}
+[0m19:09:04.971232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '433e4f03-221c-4317-8595-599e6e228d5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091d5bd0>]}
+[0m19:09:05.158170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '433e4f03-221c-4317-8595-599e6e228d5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10677d9d0>]}
+[0m19:09:05.159499 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:09:06.603686 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m19:09:07.957122 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m19:09:07.958486 [debug] [MainThread]: Partial parsing: added file: premier_league_analytics://models/marts/metrics.yml
+[0m19:09:07.959597 [debug] [MainThread]: Partial parsing: updated file: premier_league_analytics://models/marts/fct_team_season_stats.sql
+[0m19:09:09.749225 [error] [MainThread]: Encountered an error:
+Parsing Error in metric avg_goals_per_match (models/marts/metrics.yml)
+  The metric `goals_for_total` does not exist but was referenced.
+[0m19:09:09.777979 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 52.039803, "process_in_blocks": "0", "process_kernel_time": 2.789856, "process_mem_max_rss": "370393088", "process_out_blocks": "0", "process_user_time": 11.140323}
+[0m19:09:09.780678 [debug] [MainThread]: Command `dbt run` failed at 19:09:09.780113 after 52.04 seconds
+[0m19:09:09.782586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a06810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109213e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a5d850>]}
+[0m19:09:09.784138 [debug] [MainThread]: Flushing usage events
+[0m19:09:10.359017 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:09:47.800881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105552010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055d3a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055d3ed0>]}
+
+
+============================== 19:09:47.816845 | b572ca3c-c0f4-4c8b-bfba-f120d38f3d11 ==============================
+[0m19:09:47.816845 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:09:47.819152 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'fail_fast': 'False', 'printer_width': '80', 'introspect': 'True', 'target_path': 'None', 'warn_error': 'None', 'static_parser': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'invocation_command': 'dbt run --select fct_team_season_stats', 'use_colors': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'profiles_dir': '/Users/adilosman/.dbt', 'write_json': 'True', 'no_print': 'None', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'log_format': 'default'}
+[0m19:10:02.183068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b572ca3c-c0f4-4c8b-bfba-f120d38f3d11', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117c15e50>]}
+[0m19:10:02.388768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b572ca3c-c0f4-4c8b-bfba-f120d38f3d11', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102b30450>]}
+[0m19:10:02.390326 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:10:03.505788 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m19:10:04.292441 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m19:10:04.293700 [debug] [MainThread]: Partial parsing: added file: premier_league_analytics://models/marts/metrics.yml
+[0m19:10:04.298614 [debug] [MainThread]: Partial parsing: updated file: premier_league_analytics://models/marts/fct_team_season_stats.sql
+[0m19:10:05.740811 [error] [MainThread]: Encountered an error:
+Parsing Error
+  The semantic layer requires a time spine model with granularity DAY or smaller in the project, but none was found. Guidance on creating this model can be found on our docs site (https://docs.getdbt.com/docs/build/metricflow-time-spine).
+[0m19:10:05.766440 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 18.19473, "process_in_blocks": "0", "process_kernel_time": 2.809821, "process_mem_max_rss": "370860032", "process_out_blocks": "0", "process_user_time": 10.455396}
+[0m19:10:05.772028 [debug] [MainThread]: Command `dbt run` failed at 19:10:05.770932 after 18.20 seconds
+[0m19:10:05.773459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100dba810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11855d350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055b8090>]}
+[0m19:10:05.774732 [debug] [MainThread]: Flushing usage events
+[0m19:10:06.238959 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:10:31.858647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d59c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dec110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dec5d0>]}
+
+
+============================== 19:10:31.879449 | ea054d8d-2dc3-4bd3-8c71-88d3b134d3bc ==============================
+[0m19:10:31.879449 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:10:31.882096 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'log_format': 'default', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'partial_parse': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'version_check': 'True', 'static_parser': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'invocation_command': 'dbt run --select time_spine fct_team_season_stats', 'warn_error': 'None', 'printer_width': '80', 'write_json': 'True', 'profiles_dir': '/Users/adilosman/.dbt', 'empty': 'False', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager'}
+[0m19:10:45.742703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ea054d8d-2dc3-4bd3-8c71-88d3b134d3bc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096f9a10>]}
+[0m19:10:45.893703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ea054d8d-2dc3-4bd3-8c71-88d3b134d3bc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107371a50>]}
+[0m19:10:45.895234 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:10:46.732431 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m19:10:47.435664 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 1 files changed.
+[0m19:10:47.437641 [debug] [MainThread]: Partial parsing: added file: premier_league_analytics://models/marts/metrics.yml
+[0m19:10:47.438939 [debug] [MainThread]: Partial parsing: added file: premier_league_analytics://models/marts/time_spine.sql
+[0m19:10:47.440358 [debug] [MainThread]: Partial parsing: updated file: premier_league_analytics://models/marts/fct_team_season_stats.sql
+[0m19:10:48.675248 [error] [MainThread]: Encountered an error:
+Parsing Error
+  The semantic layer requires a time spine model with granularity DAY or smaller in the project, but none was found. Guidance on creating this model can be found on our docs site (https://docs.getdbt.com/docs/build/metricflow-time-spine).
+[0m19:10:48.694264 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 17.064793, "process_in_blocks": "0", "process_kernel_time": 2.665631, "process_mem_max_rss": "371171328", "process_out_blocks": "0", "process_user_time": 9.649415}
+[0m19:10:48.695623 [debug] [MainThread]: Command `dbt run` failed at 19:10:48.695366 after 17.07 seconds
+[0m19:10:48.698385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dc3ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dc1610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056d19d0>]}
+[0m19:10:48.701287 [debug] [MainThread]: Flushing usage events
+[0m19:10:49.242788 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:11:29.902182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10573a6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a70250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10572e210>]}
+
+
+============================== 19:11:29.913613 | 9c83fa20-7a81-44c5-90f6-a68b550e8e17 ==============================
+[0m19:11:29.913613 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:11:29.922083 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'introspect': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'no_print': 'None', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'warn_error': 'None', 'invocation_command': 'dbt run --select mf_time_spine fct_team_season_stats', 'version_check': 'True', 'profiles_dir': '/Users/adilosman/.dbt', 'printer_width': '80', 'quiet': 'False', 'log_format': 'default', 'write_json': 'True', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'use_colors': 'True'}
+[0m19:11:41.948048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9c83fa20-7a81-44c5-90f6-a68b550e8e17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050e99d0>]}
+[0m19:11:42.148135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9c83fa20-7a81-44c5-90f6-a68b550e8e17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102d4dcd0>]}
+[0m19:11:42.149679 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:11:43.120670 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m19:11:43.825040 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 1 files changed.
+[0m19:11:43.828178 [debug] [MainThread]: Partial parsing: added file: premier_league_analytics://models/marts/metrics.yml
+[0m19:11:43.829506 [debug] [MainThread]: Partial parsing: added file: premier_league_analytics://models/marts/time_spine.sql
+[0m19:11:43.830829 [debug] [MainThread]: Partial parsing: updated file: premier_league_analytics://models/marts/fct_team_season_stats.sql
+[0m19:11:45.686996 [error] [MainThread]: Encountered an error:
+Parsing Error
+  The semantic layer requires a time spine model with granularity DAY or smaller in the project, but none was found. Guidance on creating this model can be found on our docs site (https://docs.getdbt.com/docs/build/metricflow-time-spine).
+[0m19:11:45.722165 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 16.117872, "process_in_blocks": "0", "process_kernel_time": 2.546255, "process_mem_max_rss": "370937856", "process_out_blocks": "0", "process_user_time": 9.428864}
+[0m19:11:45.723955 [debug] [MainThread]: Command `dbt run` failed at 19:11:45.723648 after 16.12 seconds
+[0m19:11:45.725201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105795850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105794b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105793fd0>]}
+[0m19:11:45.730815 [debug] [MainThread]: Flushing usage events
+[0m19:11:46.174264 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:13:59.855395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c577c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c5dfb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c5dfbd0>]}
+
+
+============================== 19:13:59.878324 | 07686a0c-2f5e-44a7-99ad-b5f88b2ba50c ==============================
+[0m19:13:59.878324 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:13:59.895186 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'partial_parse': 'True', 'target_path': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'empty': 'False', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '/Users/adilosman/.dbt', 'use_colors': 'True', 'quiet': 'False', 'invocation_command': 'dbt run --select mf_time_spine fct_team_season_stats', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'introspect': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'write_json': 'True', 'version_check': 'True', 'no_print': 'None', 'printer_width': '80'}
+[0m19:14:35.342652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '07686a0c-2f5e-44a7-99ad-b5f88b2ba50c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ecdc910>]}
+[0m19:14:35.660313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '07686a0c-2f5e-44a7-99ad-b5f88b2ba50c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b81a10>]}
+[0m19:14:35.661434 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:14:36.742059 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m19:14:37.805848 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 1 files changed.
+[0m19:14:37.807229 [debug] [MainThread]: Partial parsing: added file: premier_league_analytics://models/marts/metrics.yml
+[0m19:14:37.807941 [debug] [MainThread]: Partial parsing: added file: premier_league_analytics://models/marts/time_spine.sql
+[0m19:14:37.808553 [debug] [MainThread]: Partial parsing: added file: premier_league_analytics://models/marts/project_configuration.yml
+[0m19:14:37.809240 [debug] [MainThread]: Partial parsing: updated file: premier_league_analytics://models/marts/fct_team_season_stats.sql
+[0m19:14:39.262873 [error] [MainThread]: Encountered an error:
+Parsing Error
+  The semantic layer requires a time spine model with granularity DAY or smaller in the project, but none was found. Guidance on creating this model can be found on our docs site (https://docs.getdbt.com/docs/build/metricflow-time-spine).
+[0m19:14:39.293769 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 39.71541, "process_in_blocks": "0", "process_kernel_time": 2.391828, "process_mem_max_rss": "371208192", "process_out_blocks": "0", "process_user_time": 9.636359}
+[0m19:14:39.295000 [debug] [MainThread]: Command `dbt run` failed at 19:14:39.294792 after 39.72 seconds
+[0m19:14:39.295749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c5d0350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c600950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c602c50>]}
+[0m19:14:39.296447 [debug] [MainThread]: Flushing usage events
+[0m19:14:39.967152 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:15:12.062242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088920d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108907f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108907fd0>]}
+
+
+============================== 19:15:12.080010 | 0ab27ebe-5704-4005-944b-2d4fa3d9dadb ==============================
+[0m19:15:12.080010 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:15:12.083592 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'target_path': 'None', 'no_print': 'None', 'version_check': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'invocation_command': 'dbt run --select mf_time_spine fct_team_season_stats', 'introspect': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'empty': 'False', 'write_json': 'True', 'debug': 'False', 'fail_fast': 'False', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'use_colors': 'True', 'log_format': 'default', 'warn_error': 'None', 'quiet': 'False', 'profiles_dir': '/Users/adilosman/.dbt', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m19:15:24.167341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0ab27ebe-5704-4005-944b-2d4fa3d9dadb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11aef8110>]}
+[0m19:15:24.330662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0ab27ebe-5704-4005-944b-2d4fa3d9dadb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e64450>]}
+[0m19:15:24.332110 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:15:25.291695 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m19:15:26.004829 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 1 files changed.
+[0m19:15:26.005940 [debug] [MainThread]: Partial parsing: added file: premier_league_analytics://models/marts/time_spine.sql
+[0m19:15:26.006616 [debug] [MainThread]: Partial parsing: added file: premier_league_analytics://models/marts/project_configuration.yml
+[0m19:15:26.007467 [debug] [MainThread]: Partial parsing: added file: premier_league_analytics://models/marts/metrics.yml
+[0m19:15:26.008530 [debug] [MainThread]: Partial parsing: updated file: premier_league_analytics://models/marts/fct_team_season_stats.sql
+[0m19:15:27.360167 [error] [MainThread]: Encountered an error:
+Parsing Error
+  The semantic layer requires a time spine model with granularity DAY or smaller in the project, but none was found. Guidance on creating this model can be found on our docs site (https://docs.getdbt.com/docs/build/metricflow-time-spine).
+[0m19:15:27.387344 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 15.52801, "process_in_blocks": "0", "process_kernel_time": 2.543996, "process_mem_max_rss": "371085312", "process_out_blocks": "0", "process_user_time": 9.274603}
+[0m19:15:27.389835 [debug] [MainThread]: Command `dbt run` failed at 19:15:27.389566 after 15.53 seconds
+[0m19:15:27.390684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108629610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088ec150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b816ad0>]}
+[0m19:15:27.391910 [debug] [MainThread]: Flushing usage events
+[0m19:15:28.052533 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:16:53.834783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b796650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7f2410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b80bfd0>]}
+
+
+============================== 19:16:53.856884 | dcf665ad-aeb0-4a8f-a90f-c3527da9e575 ==============================
+[0m19:16:53.856884 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:16:53.858619 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'write_json': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select mf_time_spine fct_team_season_stats', 'log_cache_events': 'False', 'profiles_dir': '/Users/adilosman/.dbt', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'debug': 'False', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'partial_parse': 'True', 'fail_fast': 'False', 'cache_selected_only': 'False', 'introspect': 'True', 'quiet': 'False', 'target_path': 'None', 'empty': 'False', 'use_colors': 'True', 'no_print': 'None', 'indirect_selection': 'eager', 'log_format': 'default', 'printer_width': '80'}
+[0m19:17:09.706301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dcf665ad-aeb0-4a8f-a90f-c3527da9e575', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7920d0>]}
+[0m19:17:09.859376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dcf665ad-aeb0-4a8f-a90f-c3527da9e575', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d6a410>]}
+[0m19:17:09.861579 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:17:11.019534 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m19:17:11.310102 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading premier_league_analytics: marts/metrics.yml - Runtime Error
+    Syntax error near line 38
+    ------------------------------
+    35 |     - name: points_total
+    36 |       agg: sum
+    37 |       expr: points
+    38 | ---
+    39 | mf_config_schema: https://github.com/dbt-labs/metricflow/semantic_manifest/v1
+    40 | 
+    41 | metric:
+    
+    Raw Error:
+    ------------------------------
+    expected a single document in the stream
+      in "<unicode string>", line 1, column 1
+    but found another document
+      in "<unicode string>", line 38, column 1
+[0m19:17:11.338560 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 17.73754, "process_in_blocks": "0", "process_kernel_time": 2.762891, "process_mem_max_rss": "364052480", "process_out_blocks": "0", "process_user_time": 9.670773}
+[0m19:17:11.341249 [debug] [MainThread]: Command `dbt run` failed at 19:17:11.340905 after 17.74 seconds
+[0m19:17:11.342256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f252d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e254250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070497d0>]}
+[0m19:17:11.343325 [debug] [MainThread]: Flushing usage events
+[0m19:17:11.826720 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:18:13.052540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c1fcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c7a510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c9bd50>]}
+
+
+============================== 19:18:13.064853 | b051bb51-f2f5-495f-8652-4fbe1f05ed94 ==============================
+[0m19:18:13.064853 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:18:13.066469 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'printer_width': '80', 'empty': 'False', 'profiles_dir': '/Users/adilosman/.dbt', 'no_print': 'None', 'static_parser': 'True', 'version_check': 'True', 'partial_parse': 'True', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'fail_fast': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'quiet': 'False', 'use_colors': 'True', 'write_json': 'True', 'invocation_command': 'dbt run --select fct_team_season_stats'}
+[0m19:18:25.949493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b051bb51-f2f5-495f-8652-4fbe1f05ed94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c4c550>]}
+[0m19:18:26.109351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b051bb51-f2f5-495f-8652-4fbe1f05ed94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104205e10>]}
+[0m19:18:26.110668 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:18:27.296096 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m19:18:27.934795 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m19:18:27.937771 [debug] [MainThread]: Partial parsing: added file: premier_league_analytics://models/marts/time_spine.sql
+[0m19:18:27.940702 [debug] [MainThread]: Partial parsing: updated file: premier_league_analytics://models/marts/fct_team_season_stats.sql
+[0m19:18:29.044483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b051bb51-f2f5-495f-8652-4fbe1f05ed94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119ac2ed0>]}
+[0m19:18:29.289413 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m19:18:29.305377 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m19:18:29.571187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b051bb51-f2f5-495f-8652-4fbe1f05ed94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11997acd0>]}
+[0m19:18:29.572633 [info ] [MainThread]: Found 5 models, 11 data tests, 1 source, 520 macros
+[0m19:18:29.576394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b051bb51-f2f5-495f-8652-4fbe1f05ed94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1199ce350>]}
+[0m19:18:29.585215 [info ] [MainThread]: 
+[0m19:18:29.588096 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:18:29.594533 [info ] [MainThread]: 
+[0m19:18:29.600417 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:18:29.602904 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics'
+[0m19:18:29.603990 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:18:30.150384 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pl-football-analytics, now list_pl-football-analytics_football_analytics_football_analytics_staging)
+[0m19:18:30.151631 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics_football_analytics_football_analytics'
+[0m19:18:30.157858 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:18:30.152849 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:18:30.896910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b051bb51-f2f5-495f-8652-4fbe1f05ed94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119a6ad50>]}
+[0m19:18:30.899809 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:18:30.928604 [debug] [Thread-1 (]: Began running node model.premier_league_analytics.fct_team_season_stats
+[0m19:18:30.932090 [info ] [Thread-1 (]: 1 of 1 START sql table model football_analytics_football_analytics.fct_team_season_stats  [RUN]
+[0m19:18:30.934009 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pl-football-analytics_football_analytics_football_analytics_staging, now model.premier_league_analytics.fct_team_season_stats)
+[0m19:18:30.935025 [debug] [Thread-1 (]: Began compiling node model.premier_league_analytics.fct_team_season_stats
+[0m19:18:30.976832 [debug] [Thread-1 (]: Writing injected SQL for node "model.premier_league_analytics.fct_team_season_stats"
+[0m19:18:30.989182 [debug] [Thread-1 (]: Began executing node model.premier_league_analytics.fct_team_season_stats
+[0m19:18:31.080358 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:18:32.378711 [debug] [Thread-1 (]: Writing runtime sql for node "model.premier_league_analytics.fct_team_season_stats"
+[0m19:18:32.383889 [debug] [Thread-1 (]: On model.premier_league_analytics.fct_team_season_stats: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "node_id": "model.premier_league_analytics.fct_team_season_stats"} */
+
+  
+    
+
+    create or replace table `pl-football-analytics`.`football_analytics_football_analytics`.`fct_team_season_stats`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with all_matches as (
+
+    select
+      season,
+      season_start_year,
+      season_end_year,
+      match_date,
+      home_team_id as team_id,
+      home_team_name as team_name,
+      'H' as venue,
+      home_goals as goals_for,
+      away_goals as goals_against,
+      home_points as points
+    from `pl-football-analytics`.`football_analytics_football_analytics`.`fct_match_results`
+
+    union all
+
+    select
+      season,
+      season_start_year,
+      season_end_year,
+      match_date,
+      away_team_id as team_id,
+      away_team_name as team_name,
+      'A' as venue,
+      away_goals as goals_for,
+      home_goals as goals_against,
+      away_points as points
+    from `pl-football-analytics`.`football_analytics_football_analytics`.`fct_match_results`
+
+),
+
+agg as (
+
+    select
+      team_id,
+      team_name,
+      season,
+      season_start_year,
+      season_end_year,
+
+      count(*) as matches_played,
+      sum(case when points = 3 then 1 else 0 end) as wins,
+      sum(case when points = 1 then 1 else 0 end) as draws,
+      sum(case when points = 0 then 1 else 0 end) as losses,
+
+      sum(goals_for) as goals_for,
+      sum(goals_against) as goals_against,
+      sum(goals_for - goals_against) as goal_diff,
+      sum(points) as points,
+
+      sum(case when venue = 'H' then 1 else 0 end) as home_matches,
+      sum(case when venue = 'A' then 1 else 0 end) as away_matches
+    from all_matches
+    group by
+      team_id,
+      team_name,
+      season,
+      season_start_year,
+      season_end_year
+)
+
+select
+  agg.*,
+  date(season_start_year, 8, 1) as season_start_date,
+  date(season_end_year, 5, 31) as season_end_date
+from agg
+    );
+  
+[0m19:18:32.865729 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:e02c2e0a-8493-4323-b087-bd9a67f2d930&page=queryresults
+[0m19:18:38.064405 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b051bb51-f2f5-495f-8652-4fbe1f05ed94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a06a810>]}
+[0m19:18:38.065724 [info ] [Thread-1 (]: 1 of 1 OK created sql table model football_analytics_football_analytics.fct_team_season_stats  [[32mCREATE TABLE (0.0 rows, 0 processed)[0m in 7.12s]
+[0m19:18:38.080234 [debug] [Thread-1 (]: Finished running node model.premier_league_analytics.fct_team_season_stats
+[0m19:18:38.100988 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:18:38.105110 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:18:38.105856 [debug] [MainThread]: Connection 'model.premier_league_analytics.fct_team_season_stats' was properly closed.
+[0m19:18:38.107475 [debug] [MainThread]: Connection 'list_pl-football-analytics_football_analytics_football_analytics' was properly closed.
+[0m19:18:38.108497 [info ] [MainThread]: 
+[0m19:18:38.110054 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 8.51 seconds (8.51s).
+[0m19:18:38.111640 [debug] [MainThread]: Command end result
+[0m19:18:38.197288 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m19:18:38.206183 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m19:18:38.229779 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/run_results.json
+[0m19:18:38.231178 [info ] [MainThread]: 
+[0m19:18:38.232546 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:18:38.234285 [info ] [MainThread]: 
+[0m19:18:38.236523 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m19:18:38.252533 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 25.377388, "process_in_blocks": "0", "process_kernel_time": 2.782295, "process_mem_max_rss": "381952000", "process_out_blocks": "0", "process_user_time": 10.080747}
+[0m19:18:38.253654 [debug] [MainThread]: Command `dbt run` succeeded at 19:18:38.253451 after 25.38 seconds
+[0m19:18:38.254379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c34350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102486750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1023d2010>]}
+[0m19:18:38.255088 [debug] [MainThread]: Flushing usage events
+[0m19:18:38.713789 [debug] [MainThread]: An error was encountered while trying to flush usage events
