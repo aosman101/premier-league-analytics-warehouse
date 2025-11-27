@@ -71,6 +71,24 @@ dbt run
 dbt test
 ```
 
+## Example queries
+```sql
+-- 1) League table for 2022–23
+select *
+from `pl-football-analytics.football_analytics.fct_team_season_stats`
+where season = '2022-23'
+order by points desc, goal_diff desc, goals_for desc;
+
+-- 2) Most prolific attacks (avg goals per game, across all seasons)
+select
+  team_name,
+  sum(goals_for) / sum(matches_played) as avg_goals_per_game
+from `pl-football-analytics.football_analytics.fct_team_season_stats`
+group by team_name
+order by avg_goals_per_game desc
+limit 10;
+```
+
 ## dbt models (what they do)
 - `stg_pl_matches`: cleans/types raw fields, parses dates/times, and builds stable `match_id`.
 - `dim_team`: distinct team dimension (home/away union) with generated UUID `team_id`.
