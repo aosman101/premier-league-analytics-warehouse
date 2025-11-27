@@ -1,0 +1,9 @@
+mf_config_schema: https://github.com/dbt-labs/metricflow/semantic_manifest/v1
+
+metric:
+  name: matches_played_total
+  label: "Matches played (total)"
+  description: "Total matches played by team and season."
+  type: simple
+  type_params:
+    measure: matches_played_total

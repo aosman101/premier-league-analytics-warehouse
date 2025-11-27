@@ -1,0 +1,10 @@
+mf_config_schema: https://github.com/dbt-labs/metricflow/semantic_manifest/v1
+
+metric:
+  name: win_rate
+  label: "Win rate"
+  description: "Share of matches won by team and season."
+  type: ratio
+  type_params:
+    numerator: wins_total
+    denominator: matches_played_total

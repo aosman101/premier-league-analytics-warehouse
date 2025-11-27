@@ -4,7 +4,7 @@ config-version: 2
 
 profile: "premier_league_analytics"
 
-model-paths: ["models"]
+model-paths: ["models", "semantic_models"]
 macro-paths: ["macros"]
 target-path: "target"
 clean-targets: ["target", "dbt_packages"]

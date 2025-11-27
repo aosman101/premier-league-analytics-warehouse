@@ -1,0 +1,9 @@
+mf_config_schema: https://github.com/dbt-labs/metricflow/semantic_manifest/v1
+
+metric:
+  name: points_total
+  label: "Points (total)"
+  description: "Total points by team and season."
+  type: simple
+  type_params:
+    measure: points_total

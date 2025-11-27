@@ -1,0 +1,10 @@
+mf_config_schema: https://github.com/dbt-labs/metricflow/semantic_manifest/v1
+
+metric:
+  name: points_per_match
+  label: "Points per match"
+  description: "Average points earned per match by team and season."
+  type: ratio
+  type_params:
+    numerator: points_total
+    denominator: matches_played_total

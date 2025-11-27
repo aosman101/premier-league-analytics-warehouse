@@ -1,0 +1,9 @@
+mf_config_schema: https://github.com/dbt-labs/metricflow/semantic_manifest/v1
+
+metric:
+  name: goals_for_total
+  label: "Goals for (total)"
+  description: "Total goals scored by team and season."
+  type: simple
+  type_params:
+    measure: goals_for_total

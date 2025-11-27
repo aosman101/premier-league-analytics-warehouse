@@ -1,0 +1,9 @@
+mf_config_schema: https://github.com/dbt-labs/metricflow/semantic_manifest/v1
+
+metric:
+  name: wins_total
+  label: "Wins (total)"
+  description: "Total wins by team and season."
+  type: simple
+  type_params:
+    measure: wins_total

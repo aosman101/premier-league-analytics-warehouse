@@ -1,0 +1,37 @@
+mf_config_schema: https://github.com/dbt-labs/metricflow/semantic_manifest/v1
+
+semantic_model:
+  name: team_season
+  model: ref('fct_team_season_stats')
+  primary_entity: team
+  defaults:
+    agg_time_dimension: season_start_date
+  entities:
+    - name: team
+      type: primary
+      expr: team_id
+  dimensions:
+    - name: team_name
+      type: categorical
+    - name: season
+      type: categorical
+    - name: season_start_date
+      type: time
+      type_params:
+        time_granularity: day
+  measures:
+    - name: goals_for_total
+      agg: sum
+      expr: goals_for
+    - name: goals_against_total
+      agg: sum
+      expr: goals_against
+    - name: matches_played_total
+      agg: sum
+      expr: matches_played
+    - name: wins_total
+      agg: sum
+      expr: wins
+    - name: points_total
+      agg: sum
+      expr: points

@@ -1,0 +1,16 @@
+mf_config_schema: https://github.com/dbt-labs/metricflow/semantic_manifest/v1
+
+project_configuration:
+  time_spine_table_configurations:
+    - location: "{{ target.project }}.{{ target.schema }}.mf_time_spine"
+      column_name: date_day
+      grain: day
+  time_spines:
+    - node_relation:
+        alias: mf_time_spine
+        schema_name: "{{ target.schema }}"
+        database: "{{ target.project }}"
+        relation_name: mf_time_spine
+      primary_column:
+        name: date_day
+        time_granularity: day
