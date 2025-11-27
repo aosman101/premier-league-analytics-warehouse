@@ -8267,3 +8267,2630 @@ from agg
 [0m19:45:35.760012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113bcbcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1138bbc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113be4210>]}
 [0m19:45:35.763382 [debug] [MainThread]: Flushing usage events
 [0m19:45:36.139956 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:47:25.548672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f584d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110fd2590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110fd2b10>]}
+
+
+============================== 19:47:25.561617 | 5b139624-7aff-41c0-ae08-1644f2e7a375 ==============================
+[0m19:47:25.561617 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:47:25.563697 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/adilosman/.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'warn_error': 'None', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'no_print': 'None', 'debug': 'False', 'invocation_command': 'dbt run --select time_spine fct_team_season_stats', 'log_cache_events': 'False', 'version_check': 'True', 'write_json': 'True', 'target_path': 'None', 'quiet': 'False', 'empty': 'False', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False'}
+[0m19:47:37.612226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5b139624-7aff-41c0-ae08-1644f2e7a375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f1271d0>]}
+[0m19:47:37.806604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5b139624-7aff-41c0-ae08-1644f2e7a375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e540150>]}
+[0m19:47:37.811595 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:47:38.600126 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m19:47:38.925219 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:47:38.926020 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:47:39.035874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5b139624-7aff-41c0-ae08-1644f2e7a375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123a3bf50>]}
+[0m19:47:39.237615 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m19:47:39.242249 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m19:47:39.287946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5b139624-7aff-41c0-ae08-1644f2e7a375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123693dd0>]}
+[0m19:47:39.288971 [info ] [MainThread]: Found 5 models, 11 data tests, 1 source, 520 macros
+[0m19:47:39.289734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5b139624-7aff-41c0-ae08-1644f2e7a375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12356b590>]}
+[0m19:47:39.292887 [info ] [MainThread]: 
+[0m19:47:39.293855 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:47:39.294747 [info ] [MainThread]: 
+[0m19:47:39.298648 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:47:39.329357 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics'
+[0m19:47:39.331302 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:47:39.925178 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pl-football-analytics, now list_pl-football-analytics_football_analytics_football_analytics_staging)
+[0m19:47:39.926678 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics_football_analytics_football_analytics'
+[0m19:47:39.927710 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:47:39.928551 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:47:40.334939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5b139624-7aff-41c0-ae08-1644f2e7a375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123618150>]}
+[0m19:47:40.336340 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:47:40.356783 [debug] [Thread-1 (]: Began running node model.premier_league_analytics.fct_team_season_stats
+[0m19:47:40.357805 [debug] [Thread-2 (]: Began running node model.premier_league_analytics.time_spine
+[0m19:47:40.359293 [info ] [Thread-1 (]: 1 of 2 START sql table model football_analytics_football_analytics.fct_team_season_stats  [RUN]
+[0m19:47:40.360805 [info ] [Thread-2 (]: 2 of 2 START sql table model football_analytics_football_analytics.mf_time_spine  [RUN]
+[0m19:47:40.362210 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pl-football-analytics_football_analytics_football_analytics_staging, now model.premier_league_analytics.fct_team_season_stats)
+[0m19:47:40.363443 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_pl-football-analytics_football_analytics_football_analytics, now model.premier_league_analytics.time_spine)
+[0m19:47:40.364614 [debug] [Thread-1 (]: Began compiling node model.premier_league_analytics.fct_team_season_stats
+[0m19:47:40.366694 [debug] [Thread-2 (]: Began compiling node model.premier_league_analytics.time_spine
+[0m19:47:40.392943 [debug] [Thread-1 (]: Writing injected SQL for node "model.premier_league_analytics.fct_team_season_stats"
+[0m19:47:40.400335 [debug] [Thread-2 (]: Writing injected SQL for node "model.premier_league_analytics.time_spine"
+[0m19:47:40.407172 [debug] [Thread-1 (]: Began executing node model.premier_league_analytics.fct_team_season_stats
+[0m19:47:40.408617 [debug] [Thread-2 (]: Began executing node model.premier_league_analytics.time_spine
+[0m19:47:40.442983 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:47:40.448369 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:47:40.893853 [debug] [Thread-1 (]: Writing runtime sql for node "model.premier_league_analytics.fct_team_season_stats"
+[0m19:47:40.894654 [debug] [Thread-2 (]: Writing runtime sql for node "model.premier_league_analytics.time_spine"
+[0m19:47:40.897610 [debug] [Thread-2 (]: On model.premier_league_analytics.time_spine: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "node_id": "model.premier_league_analytics.time_spine"} */
+
+  
+    
+
+    create or replace table `pl-football-analytics`.`football_analytics_football_analytics`.`mf_time_spine`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+-- Time spine for MetricFlow (daily grain).
+with spine as (
+  select day as date_day
+  from unnest(generate_date_array(date '2014-07-01', date '2025-06-30', interval 1 day)) as day
+)
+
+select * from spine
+    );
+  
+[0m19:47:40.901100 [debug] [Thread-1 (]: On model.premier_league_analytics.fct_team_season_stats: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "node_id": "model.premier_league_analytics.fct_team_season_stats"} */
+
+  
+    
+
+    create or replace table `pl-football-analytics`.`football_analytics_football_analytics`.`fct_team_season_stats`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with all_matches as (
+
+    select
+      season,
+      season_start_year,
+      season_end_year,
+      match_date,
+      home_team_id as team_id,
+      home_team_name as team_name,
+      'H' as venue,
+      home_goals as goals_for,
+      away_goals as goals_against,
+      home_points as points
+    from `pl-football-analytics`.`football_analytics_football_analytics`.`fct_match_results`
+
+    union all
+
+    select
+      season,
+      season_start_year,
+      season_end_year,
+      match_date,
+      away_team_id as team_id,
+      away_team_name as team_name,
+      'A' as venue,
+      away_goals as goals_for,
+      home_goals as goals_against,
+      away_points as points
+    from `pl-football-analytics`.`football_analytics_football_analytics`.`fct_match_results`
+
+),
+
+agg as (
+
+    select
+      team_id,
+      team_name,
+      season,
+      season_start_year,
+      season_end_year,
+
+      count(*) as matches_played,
+      sum(case when points = 3 then 1 else 0 end) as wins,
+      sum(case when points = 1 then 1 else 0 end) as draws,
+      sum(case when points = 0 then 1 else 0 end) as losses,
+
+      sum(goals_for) as goals_for,
+      sum(goals_against) as goals_against,
+      sum(goals_for - goals_against) as goal_diff,
+      sum(points) as points,
+
+      sum(case when venue = 'H' then 1 else 0 end) as home_matches,
+      sum(case when venue = 'A' then 1 else 0 end) as away_matches
+    from all_matches
+    group by
+      team_id,
+      team_name,
+      season,
+      season_start_year,
+      season_end_year
+)
+
+select
+  agg.*,
+  date(season_start_year, 8, 1) as season_start_date,
+  date(season_end_year, 5, 31) as season_end_date
+from agg
+    );
+  
+[0m19:47:41.142218 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:7b0867e7-cebf-4e0c-81bf-b0950ecc7e8c&page=queryresults
+[0m19:47:41.245177 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:42d0e029-4c97-45e7-90f1-dfae9a5dff4b&page=queryresults
+[0m19:47:44.584969 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5b139624-7aff-41c0-ae08-1644f2e7a375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123ba2dd0>]}
+[0m19:47:44.585676 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5b139624-7aff-41c0-ae08-1644f2e7a375', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123a7c850>]}
+[0m19:47:44.587462 [info ] [Thread-2 (]: 2 of 2 OK created sql table model football_analytics_football_analytics.mf_time_spine  [[32mCREATE TABLE (4.0k rows, 0 processed)[0m in 4.21s]
+[0m19:47:44.589140 [info ] [Thread-1 (]: 1 of 2 OK created sql table model football_analytics_football_analytics.fct_team_season_stats  [[32mCREATE TABLE (0.0 rows, 0 processed)[0m in 4.22s]
+[0m19:47:44.590856 [debug] [Thread-2 (]: Finished running node model.premier_league_analytics.time_spine
+[0m19:47:44.591935 [debug] [Thread-1 (]: Finished running node model.premier_league_analytics.fct_team_season_stats
+[0m19:47:44.595763 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:47:44.605423 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:47:44.610590 [debug] [MainThread]: Connection 'model.premier_league_analytics.fct_team_season_stats' was properly closed.
+[0m19:47:44.611788 [debug] [MainThread]: Connection 'model.premier_league_analytics.time_spine' was properly closed.
+[0m19:47:44.613174 [info ] [MainThread]: 
+[0m19:47:44.614749 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 5.32 seconds (5.32s).
+[0m19:47:44.617170 [debug] [MainThread]: Command end result
+[0m19:47:44.699927 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m19:47:44.712246 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m19:47:44.741750 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/run_results.json
+[0m19:47:44.742861 [info ] [MainThread]: 
+[0m19:47:44.745865 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:47:44.747006 [info ] [MainThread]: 
+[0m19:47:44.748934 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m19:47:44.778441 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 19.385822, "process_in_blocks": "0", "process_kernel_time": 2.386743, "process_mem_max_rss": "369303552", "process_out_blocks": "0", "process_user_time": 10.336361}
+[0m19:47:44.780710 [debug] [MainThread]: Command `dbt run` succeeded at 19:47:44.780333 after 19.39 seconds
+[0m19:47:44.781983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110fbe5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110fbc450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f4ff50>]}
+[0m19:47:44.783129 [debug] [MainThread]: Flushing usage events
+[0m19:47:45.179564 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:48:04.076808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10783d010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078a9410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078bf250>]}
+
+
+============================== 19:48:04.105261 | 067bb33d-6f87-465b-8d19-0dad3e75a300 ==============================
+[0m19:48:04.105261 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:48:04.106882 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'log_format': 'default', 'write_json': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt docs generate', 'profiles_dir': '/Users/adilosman/.dbt', 'target_path': 'None', 'no_print': 'None', 'fail_fast': 'False', 'static_parser': 'True', 'introspect': 'True', 'empty': 'None', 'printer_width': '80', 'warn_error': 'None'}
+[0m19:48:35.049873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '067bb33d-6f87-465b-8d19-0dad3e75a300', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10783c550>]}
+[0m19:48:35.149378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '067bb33d-6f87-465b-8d19-0dad3e75a300', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e34790>]}
+[0m19:48:35.150615 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:48:35.791346 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m19:48:36.506371 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:48:36.507082 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:48:36.595639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '067bb33d-6f87-465b-8d19-0dad3e75a300', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a2dab50>]}
+[0m19:48:36.776509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '067bb33d-6f87-465b-8d19-0dad3e75a300', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119e55410>]}
+[0m19:48:36.777331 [info ] [MainThread]: Found 5 models, 11 data tests, 1 source, 520 macros
+[0m19:48:36.778026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '067bb33d-6f87-465b-8d19-0dad3e75a300', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a2ee090>]}
+[0m19:48:36.781356 [info ] [MainThread]: 
+[0m19:48:36.782048 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:48:36.782562 [info ] [MainThread]: 
+[0m19:48:36.783831 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:48:36.797055 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics_football_analytics_football_analytics_staging'
+[0m19:48:36.798240 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics_football_analytics_football_analytics'
+[0m19:48:36.799275 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:48:36.799904 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:48:37.184069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '067bb33d-6f87-465b-8d19-0dad3e75a300', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119df9910>]}
+[0m19:48:37.185132 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:48:37.196642 [debug] [Thread-1 (]: Began running node model.premier_league_analytics.stg_pl_matches
+[0m19:48:37.197484 [debug] [Thread-2 (]: Began running node model.premier_league_analytics.time_spine
+[0m19:48:37.198506 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pl-football-analytics_football_analytics_football_analytics_staging, now model.premier_league_analytics.stg_pl_matches)
+[0m19:48:37.199408 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_pl-football-analytics_football_analytics_football_analytics, now model.premier_league_analytics.time_spine)
+[0m19:48:37.200407 [debug] [Thread-1 (]: Began compiling node model.premier_league_analytics.stg_pl_matches
+[0m19:48:37.201768 [debug] [Thread-2 (]: Began compiling node model.premier_league_analytics.time_spine
+[0m19:48:37.226252 [debug] [Thread-1 (]: Writing injected SQL for node "model.premier_league_analytics.stg_pl_matches"
+[0m19:48:37.231252 [debug] [Thread-2 (]: Writing injected SQL for node "model.premier_league_analytics.time_spine"
+[0m19:48:37.235447 [debug] [Thread-2 (]: Began executing node model.premier_league_analytics.time_spine
+[0m19:48:37.236465 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:48:37.237661 [debug] [Thread-1 (]: Began executing node model.premier_league_analytics.stg_pl_matches
+[0m19:48:37.240811 [debug] [Thread-2 (]: Finished running node model.premier_league_analytics.time_spine
+[0m19:48:37.241455 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:48:37.244936 [debug] [Thread-1 (]: Finished running node model.premier_league_analytics.stg_pl_matches
+[0m19:48:37.247230 [debug] [Thread-4 (]: Began running node model.premier_league_analytics.dim_team
+[0m19:48:37.248096 [debug] [Thread-3 (]: Began running node test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666
+[0m19:48:37.248811 [debug] [Thread-2 (]: Began running node test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663
+[0m19:48:37.249744 [debug] [Thread-1 (]: Began running node test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd
+[0m19:48:37.250967 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.premier_league_analytics.dim_team'
+[0m19:48:37.252233 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666'
+[0m19:48:37.253190 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.time_spine, now test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663)
+[0m19:48:37.254081 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.stg_pl_matches, now test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd)
+[0m19:48:37.255255 [debug] [Thread-4 (]: Began compiling node model.premier_league_analytics.dim_team
+[0m19:48:37.256253 [debug] [Thread-3 (]: Began compiling node test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666
+[0m19:48:37.257252 [debug] [Thread-2 (]: Began compiling node test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663
+[0m19:48:37.258294 [debug] [Thread-1 (]: Began compiling node test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd
+[0m19:48:37.264410 [debug] [Thread-4 (]: Writing injected SQL for node "model.premier_league_analytics.dim_team"
+[0m19:48:37.278770 [debug] [Thread-3 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666"
+[0m19:48:37.283312 [debug] [Thread-2 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663"
+[0m19:48:37.288236 [debug] [Thread-1 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd"
+[0m19:48:37.294157 [debug] [Thread-2 (]: Began executing node test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663
+[0m19:48:37.294737 [debug] [Thread-4 (]: Began executing node model.premier_league_analytics.dim_team
+[0m19:48:37.295213 [debug] [Thread-3 (]: Began executing node test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666
+[0m19:48:37.295945 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:48:37.296484 [debug] [Thread-1 (]: Began executing node test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd
+[0m19:48:37.297093 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m19:48:37.297658 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m19:48:37.298411 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:48:37.300898 [debug] [Thread-2 (]: Finished running node test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663
+[0m19:48:37.303403 [debug] [Thread-4 (]: Finished running node model.premier_league_analytics.dim_team
+[0m19:48:37.306289 [debug] [Thread-3 (]: Finished running node test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666
+[0m19:48:37.307331 [debug] [Thread-2 (]: Began running node test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2
+[0m19:48:37.310476 [debug] [Thread-1 (]: Finished running node test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd
+[0m19:48:37.311484 [debug] [Thread-4 (]: Began running node test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8
+[0m19:48:37.312727 [debug] [Thread-3 (]: Began running node model.premier_league_analytics.fct_match_results
+[0m19:48:37.313729 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663, now test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2)
+[0m19:48:37.314494 [debug] [Thread-1 (]: Began running node test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157
+[0m19:48:37.315439 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.dim_team, now test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8)
+[0m19:48:37.316204 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666, now model.premier_league_analytics.fct_match_results)
+[0m19:48:37.317136 [debug] [Thread-2 (]: Began compiling node test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2
+[0m19:48:37.318330 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd, now test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157)
+[0m19:48:37.318957 [debug] [Thread-4 (]: Began compiling node test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8
+[0m19:48:37.319439 [debug] [Thread-3 (]: Began compiling node model.premier_league_analytics.fct_match_results
+[0m19:48:37.324406 [debug] [Thread-2 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2"
+[0m19:48:37.325097 [debug] [Thread-1 (]: Began compiling node test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157
+[0m19:48:37.334751 [debug] [Thread-4 (]: Writing injected SQL for node "test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8"
+[0m19:48:37.339162 [debug] [Thread-3 (]: Writing injected SQL for node "model.premier_league_analytics.fct_match_results"
+[0m19:48:37.345083 [debug] [Thread-1 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157"
+[0m19:48:37.346051 [debug] [Thread-2 (]: Began executing node test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2
+[0m19:48:37.347337 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:48:37.350907 [debug] [Thread-2 (]: Finished running node test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2
+[0m19:48:37.351947 [debug] [Thread-4 (]: Began executing node test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8
+[0m19:48:37.352595 [debug] [Thread-2 (]: Began running node test.premier_league_analytics.unique_dim_team_team_id.069cd44695
+[0m19:48:37.353272 [debug] [Thread-3 (]: Began executing node model.premier_league_analytics.fct_match_results
+[0m19:48:37.353995 [debug] [Thread-1 (]: Began executing node test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157
+[0m19:48:37.354959 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m19:48:37.356094 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2, now test.premier_league_analytics.unique_dim_team_team_id.069cd44695)
+[0m19:48:37.357112 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m19:48:37.358047 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:48:37.359230 [debug] [Thread-2 (]: Began compiling node test.premier_league_analytics.unique_dim_team_team_id.069cd44695
+[0m19:48:37.362549 [debug] [Thread-4 (]: Finished running node test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8
+[0m19:48:37.366635 [debug] [Thread-3 (]: Finished running node model.premier_league_analytics.fct_match_results
+[0m19:48:37.368971 [debug] [Thread-1 (]: Finished running node test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157
+[0m19:48:37.374362 [debug] [Thread-2 (]: Writing injected SQL for node "test.premier_league_analytics.unique_dim_team_team_id.069cd44695"
+[0m19:48:37.375586 [debug] [Thread-4 (]: Began running node model.premier_league_analytics.fct_team_season_stats
+[0m19:48:37.376062 [debug] [Thread-3 (]: Began running node test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d
+[0m19:48:37.376553 [debug] [Thread-1 (]: Began running node test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f
+[0m19:48:37.377749 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8, now model.premier_league_analytics.fct_team_season_stats)
+[0m19:48:37.379620 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.fct_match_results, now test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d)
+[0m19:48:37.380354 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157, now test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f)
+[0m19:48:37.381110 [debug] [Thread-4 (]: Began compiling node model.premier_league_analytics.fct_team_season_stats
+[0m19:48:37.381781 [debug] [Thread-3 (]: Began compiling node test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d
+[0m19:48:37.382353 [debug] [Thread-2 (]: Began executing node test.premier_league_analytics.unique_dim_team_team_id.069cd44695
+[0m19:48:37.382797 [debug] [Thread-1 (]: Began compiling node test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f
+[0m19:48:37.386834 [debug] [Thread-4 (]: Writing injected SQL for node "model.premier_league_analytics.fct_team_season_stats"
+[0m19:48:37.399552 [debug] [Thread-3 (]: Writing injected SQL for node "test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d"
+[0m19:48:37.400496 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:48:37.409588 [debug] [Thread-1 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f"
+[0m19:48:37.414794 [debug] [Thread-2 (]: Finished running node test.premier_league_analytics.unique_dim_team_team_id.069cd44695
+[0m19:48:37.416279 [debug] [Thread-4 (]: Began executing node model.premier_league_analytics.fct_team_season_stats
+[0m19:48:37.417400 [debug] [Thread-3 (]: Began executing node test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d
+[0m19:48:37.418709 [debug] [Thread-2 (]: Began running node test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162
+[0m19:48:37.420244 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m19:48:37.421077 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m19:48:37.421885 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.unique_dim_team_team_id.069cd44695, now test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162)
+[0m19:48:37.422733 [debug] [Thread-1 (]: Began executing node test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f
+[0m19:48:37.425294 [debug] [Thread-4 (]: Finished running node model.premier_league_analytics.fct_team_season_stats
+[0m19:48:37.427980 [debug] [Thread-3 (]: Finished running node test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d
+[0m19:48:37.428529 [debug] [Thread-2 (]: Began compiling node test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162
+[0m19:48:37.429195 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:48:37.430062 [debug] [Thread-4 (]: Began running node test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5
+[0m19:48:37.436391 [debug] [Thread-2 (]: Writing injected SQL for node "test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162"
+[0m19:48:37.437489 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.fct_team_season_stats, now test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5)
+[0m19:48:37.439798 [debug] [Thread-1 (]: Finished running node test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f
+[0m19:48:37.440652 [debug] [Thread-4 (]: Began compiling node test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5
+[0m19:48:37.450414 [debug] [Thread-4 (]: Writing injected SQL for node "test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5"
+[0m19:48:37.452126 [debug] [Thread-2 (]: Began executing node test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162
+[0m19:48:37.453256 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:48:37.457863 [debug] [Thread-2 (]: Finished running node test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162
+[0m19:48:37.459153 [debug] [Thread-4 (]: Began executing node test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5
+[0m19:48:37.460403 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m19:48:37.464875 [debug] [Thread-4 (]: Finished running node test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5
+[0m19:48:37.467362 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:48:37.468301 [debug] [MainThread]: Connection 'test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f' was properly closed.
+[0m19:48:37.468818 [debug] [MainThread]: Connection 'test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162' was properly closed.
+[0m19:48:37.469251 [debug] [MainThread]: Connection 'test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5' was properly closed.
+[0m19:48:37.469668 [debug] [MainThread]: Connection 'test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d' was properly closed.
+[0m19:48:37.473015 [debug] [MainThread]: Command end result
+[0m19:48:37.645575 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m19:48:37.653332 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m19:48:37.672074 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/run_results.json
+[0m19:48:37.805462 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m19:48:37.806358 [info ] [MainThread]: Building catalog
+[0m19:48:37.818842 [debug] [ThreadPool]: Acquiring new bigquery connection 'pl-football-analytics.information_schema'
+[0m19:48:37.829404 [debug] [ThreadPool]: Acquiring new bigquery connection 'pl-football-analytics.information_schema'
+[0m19:48:37.825379 [debug] [ThreadPool]: Acquiring new bigquery connection 'pl-football-analytics.information_schema'
+[0m19:48:38.107732 [debug] [ThreadPool]: On pl-football-analytics.information_schema: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "connection_name": "pl-football-analytics.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `pl-football-analytics`.`football_raw`.__TABLES__ tables
+    left join `pl-football-analytics`.`football_raw`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `pl-football-analytics`.`football_raw`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('football_raw')
+                            and upper(table_name) = upper('pl_matches')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `pl-football-analytics`.`football_raw`.INFORMATION_SCHEMA.COLUMNS columns
+    join `pl-football-analytics`.`football_raw`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m19:48:38.117511 [debug] [ThreadPool]: On pl-football-analytics.information_schema: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "connection_name": "pl-football-analytics.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `pl-football-analytics`.`football_analytics_football_analytics_staging`.__TABLES__ tables
+    left join `pl-football-analytics`.`football_analytics_football_analytics_staging`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `pl-football-analytics`.`football_analytics_football_analytics_staging`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('football_analytics_football_analytics_staging')
+                            and upper(table_name) = upper('stg_pl_matches')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `pl-football-analytics`.`football_analytics_football_analytics_staging`.INFORMATION_SCHEMA.COLUMNS columns
+    join `pl-football-analytics`.`football_analytics_football_analytics_staging`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m19:48:38.118998 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:48:38.122989 [debug] [ThreadPool]: On pl-football-analytics.information_schema: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "connection_name": "pl-football-analytics.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `pl-football-analytics`.`football_analytics_football_analytics`.__TABLES__ tables
+    left join `pl-football-analytics`.`football_analytics_football_analytics`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `pl-football-analytics`.`football_analytics_football_analytics`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('football_analytics_football_analytics')
+                            and upper(table_name) = upper('dim_team')
+                            ) or (
+                                upper(table_schema) = upper('football_analytics_football_analytics')
+                            and upper(table_name) = upper('fct_match_results')
+                            ) or (
+                                upper(table_schema) = upper('football_analytics_football_analytics')
+                            and upper(table_name) = upper('fct_team_season_stats')
+                            ) or (
+                                upper(table_schema) = upper('football_analytics_football_analytics')
+                            and upper(table_name) = upper('mf_time_spine')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `pl-football-analytics`.`football_analytics_football_analytics`.INFORMATION_SCHEMA.COLUMNS columns
+    join `pl-football-analytics`.`football_analytics_football_analytics`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m19:48:38.124456 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:48:38.200799 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:48:38.895005 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:d65ede75-d680-432b-a788-1915deabe470&page=queryresults
+[0m19:48:38.898759 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:36fe17ff-bd21-4403-91d1-14e43ded4c79&page=queryresults
+[0m19:48:38.913956 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:5a4941f5-7a40-475d-8816-0291d9eda54f&page=queryresults
+[0m19:48:40.346078 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:48:40.394599 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/catalog.json
+[0m19:48:40.468159 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m19:48:40.473954 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m19:48:40.474648 [info ] [MainThread]: Catalog written to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/catalog.json
+[0m19:48:40.485131 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 36.599564, "process_in_blocks": "0", "process_kernel_time": 2.443656, "process_mem_max_rss": "379412480", "process_out_blocks": "0", "process_user_time": 9.909012}
+[0m19:48:40.487636 [debug] [MainThread]: Command `dbt docs generate` succeeded at 19:48:40.487282 after 36.60 seconds
+[0m19:48:40.488666 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m19:48:40.495739 [debug] [MainThread]: Connection 'pl-football-analytics.information_schema' was properly closed.
+[0m19:48:40.497295 [debug] [MainThread]: Connection 'pl-football-analytics.information_schema' was properly closed.
+[0m19:48:40.500280 [debug] [MainThread]: Connection 'pl-football-analytics.information_schema' was properly closed.
+[0m19:48:40.503781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078dbb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10317f4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119ddbbd0>]}
+[0m19:48:40.507995 [debug] [MainThread]: Flushing usage events
+[0m19:48:40.875117 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:48:58.496258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111e9010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11126e710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11126ec90>]}
+
+
+============================== 19:48:58.511293 | 53d8eb87-72d0-4220-8598-a57a2b615308 ==============================
+[0m19:48:58.511293 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:48:58.513175 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'no_print': 'None', 'static_parser': 'True', 'profiles_dir': '/Users/adilosman/.dbt', 'cache_selected_only': 'False', 'printer_width': '80', 'log_cache_events': 'False', 'quiet': 'False', 'fail_fast': 'False', 'warn_error': 'None', 'target_path': 'None', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'introspect': 'True', 'empty': 'None', 'invocation_command': 'dbt docs serve --no-browser --port 8080', 'log_format': 'default', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'indirect_selection': 'eager'}
+[0m19:49:08.944820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '53d8eb87-72d0-4220-8598-a57a2b615308', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f431850>]}
+[0m19:49:09.052816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '53d8eb87-72d0-4220-8598-a57a2b615308', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e7d8650>]}
+[0m19:50:23.794200 [error] [MainThread]: Encountered an error:
+
+[0m19:50:23.877893 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/adilosman/Desktop/premier-league-analytics-warehouse/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adilosman/Desktop/premier-league-analytics-warehouse/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adilosman/Desktop/premier-league-analytics-warehouse/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adilosman/Desktop/premier-league-analytics-warehouse/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adilosman/Desktop/premier-league-analytics-warehouse/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adilosman/Desktop/premier-league-analytics-warehouse/.venv/lib/python3.11/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/adilosman/Desktop/premier-league-analytics-warehouse/.venv/lib/python3.11/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/usr/local/Cellar/python@3.11/3.11.14_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.14_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m19:50:23.889908 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 85.570625, "process_in_blocks": "0", "process_kernel_time": 2.207449, "process_mem_max_rss": "357277696", "process_out_blocks": "0", "process_user_time": 8.044673}
+[0m19:50:23.894911 [debug] [MainThread]: Command `dbt docs serve` failed at 19:50:23.894452 after 85.58 seconds
+[0m19:50:23.897636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111f1ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e79e090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111eb650>]}
+[0m19:50:23.899720 [debug] [MainThread]: Flushing usage events
+[0m19:50:24.507636 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:52:45.184692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d2f1010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd7abd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd7b490>]}
+
+
+============================== 19:52:45.221061 | 3c8060b0-a0a8-41e0-a5b4-e539faaeea79 ==============================
+[0m19:52:45.221061 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:52:45.222814 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'debug': 'False', 'printer_width': '80', 'empty': 'None', 'static_parser': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'no_print': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/adilosman/.dbt', 'invocation_command': 'dbt docs generate', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'write_json': 'True', 'warn_error': 'None', 'partial_parse': 'True'}
+[0m19:53:10.082114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3c8060b0-a0a8-41e0-a5b4-e539faaeea79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd1fb50>]}
+[0m19:53:10.173169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3c8060b0-a0a8-41e0-a5b4-e539faaeea79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d308450>]}
+[0m19:53:10.174214 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:53:10.864608 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m19:53:11.715318 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:53:11.716365 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:53:11.808197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3c8060b0-a0a8-41e0-a5b4-e539faaeea79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12285d110>]}
+[0m19:53:12.005950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3c8060b0-a0a8-41e0-a5b4-e539faaeea79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x122683a90>]}
+[0m19:53:12.007384 [info ] [MainThread]: Found 5 models, 11 data tests, 1 source, 520 macros
+[0m19:53:12.008563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3c8060b0-a0a8-41e0-a5b4-e539faaeea79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12271abd0>]}
+[0m19:53:12.014929 [info ] [MainThread]: 
+[0m19:53:12.016448 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:53:12.017326 [info ] [MainThread]: 
+[0m19:53:12.018386 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:53:12.031184 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics_football_analytics_football_analytics'
+[0m19:53:12.032488 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics_football_analytics_football_analytics_staging'
+[0m19:53:12.033243 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:53:12.033894 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:53:12.498001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3c8060b0-a0a8-41e0-a5b4-e539faaeea79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d28cad0>]}
+[0m19:53:12.499025 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:53:12.518618 [debug] [Thread-1 (]: Began running node model.premier_league_analytics.stg_pl_matches
+[0m19:53:12.519724 [debug] [Thread-2 (]: Began running node model.premier_league_analytics.time_spine
+[0m19:53:12.522089 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pl-football-analytics_football_analytics_football_analytics, now model.premier_league_analytics.stg_pl_matches)
+[0m19:53:12.523320 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_pl-football-analytics_football_analytics_football_analytics_staging, now model.premier_league_analytics.time_spine)
+[0m19:53:12.524164 [debug] [Thread-1 (]: Began compiling node model.premier_league_analytics.stg_pl_matches
+[0m19:53:12.524900 [debug] [Thread-2 (]: Began compiling node model.premier_league_analytics.time_spine
+[0m19:53:12.542546 [debug] [Thread-1 (]: Writing injected SQL for node "model.premier_league_analytics.stg_pl_matches"
+[0m19:53:12.551275 [debug] [Thread-2 (]: Writing injected SQL for node "model.premier_league_analytics.time_spine"
+[0m19:53:12.557816 [debug] [Thread-1 (]: Began executing node model.premier_league_analytics.stg_pl_matches
+[0m19:53:12.559026 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:53:12.559937 [debug] [Thread-2 (]: Began executing node model.premier_league_analytics.time_spine
+[0m19:53:12.561464 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:53:12.565376 [debug] [Thread-1 (]: Finished running node model.premier_league_analytics.stg_pl_matches
+[0m19:53:12.569233 [debug] [Thread-2 (]: Finished running node model.premier_league_analytics.time_spine
+[0m19:53:12.570002 [debug] [Thread-4 (]: Began running node model.premier_league_analytics.dim_team
+[0m19:53:12.570453 [debug] [Thread-3 (]: Began running node test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666
+[0m19:53:12.570918 [debug] [Thread-1 (]: Began running node test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663
+[0m19:53:12.571330 [debug] [Thread-2 (]: Began running node test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd
+[0m19:53:12.571990 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.premier_league_analytics.dim_team'
+[0m19:53:12.572538 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666'
+[0m19:53:12.573003 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.stg_pl_matches, now test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663)
+[0m19:53:12.573466 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.time_spine, now test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd)
+[0m19:53:12.573876 [debug] [Thread-4 (]: Began compiling node model.premier_league_analytics.dim_team
+[0m19:53:12.574383 [debug] [Thread-3 (]: Began compiling node test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666
+[0m19:53:12.574879 [debug] [Thread-1 (]: Began compiling node test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663
+[0m19:53:12.575287 [debug] [Thread-2 (]: Began compiling node test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd
+[0m19:53:12.580203 [debug] [Thread-4 (]: Writing injected SQL for node "model.premier_league_analytics.dim_team"
+[0m19:53:12.595753 [debug] [Thread-3 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666"
+[0m19:53:12.605002 [debug] [Thread-1 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663"
+[0m19:53:12.615337 [debug] [Thread-2 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd"
+[0m19:53:12.620979 [debug] [Thread-3 (]: Began executing node test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666
+[0m19:53:12.621672 [debug] [Thread-4 (]: Began executing node model.premier_league_analytics.dim_team
+[0m19:53:12.622478 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m19:53:12.623062 [debug] [Thread-2 (]: Began executing node test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd
+[0m19:53:12.623504 [debug] [Thread-1 (]: Began executing node test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663
+[0m19:53:12.623940 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m19:53:12.624673 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:53:12.627236 [debug] [Thread-3 (]: Finished running node test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666
+[0m19:53:12.627869 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:53:12.630383 [debug] [Thread-4 (]: Finished running node model.premier_league_analytics.dim_team
+[0m19:53:12.632877 [debug] [Thread-2 (]: Finished running node test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd
+[0m19:53:12.633507 [debug] [Thread-3 (]: Began running node test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2
+[0m19:53:12.634399 [debug] [Thread-4 (]: Began running node test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8
+[0m19:53:12.636563 [debug] [Thread-1 (]: Finished running node test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663
+[0m19:53:12.637730 [debug] [Thread-2 (]: Began running node model.premier_league_analytics.fct_match_results
+[0m19:53:12.638451 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666, now test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2)
+[0m19:53:12.639068 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.dim_team, now test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8)
+[0m19:53:12.639630 [debug] [Thread-1 (]: Began running node test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157
+[0m19:53:12.640226 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd, now model.premier_league_analytics.fct_match_results)
+[0m19:53:12.640799 [debug] [Thread-3 (]: Began compiling node test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2
+[0m19:53:12.641353 [debug] [Thread-4 (]: Began compiling node test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8
+[0m19:53:12.642268 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663, now test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157)
+[0m19:53:12.643416 [debug] [Thread-2 (]: Began compiling node model.premier_league_analytics.fct_match_results
+[0m19:53:12.653766 [debug] [Thread-3 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2"
+[0m19:53:12.670975 [debug] [Thread-4 (]: Writing injected SQL for node "test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8"
+[0m19:53:12.671808 [debug] [Thread-1 (]: Began compiling node test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157
+[0m19:53:12.676959 [debug] [Thread-2 (]: Writing injected SQL for node "model.premier_league_analytics.fct_match_results"
+[0m19:53:12.687775 [debug] [Thread-1 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157"
+[0m19:53:12.688796 [debug] [Thread-3 (]: Began executing node test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2
+[0m19:53:12.691756 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m19:53:12.689948 [debug] [Thread-4 (]: Began executing node test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8
+[0m19:53:12.696526 [debug] [Thread-3 (]: Finished running node test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2
+[0m19:53:12.697876 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m19:53:12.699429 [debug] [Thread-3 (]: Began running node test.premier_league_analytics.unique_dim_team_team_id.069cd44695
+[0m19:53:12.701084 [debug] [Thread-2 (]: Began executing node model.premier_league_analytics.fct_match_results
+[0m19:53:12.702665 [debug] [Thread-1 (]: Began executing node test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157
+[0m19:53:12.704183 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2, now test.premier_league_analytics.unique_dim_team_team_id.069cd44695)
+[0m19:53:12.708672 [debug] [Thread-4 (]: Finished running node test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8
+[0m19:53:12.710141 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:53:12.713948 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:53:12.715781 [debug] [Thread-3 (]: Began compiling node test.premier_league_analytics.unique_dim_team_team_id.069cd44695
+[0m19:53:12.720057 [debug] [Thread-2 (]: Finished running node model.premier_league_analytics.fct_match_results
+[0m19:53:12.722962 [debug] [Thread-1 (]: Finished running node test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157
+[0m19:53:12.729756 [debug] [Thread-3 (]: Writing injected SQL for node "test.premier_league_analytics.unique_dim_team_team_id.069cd44695"
+[0m19:53:12.731417 [debug] [Thread-4 (]: Began running node model.premier_league_analytics.fct_team_season_stats
+[0m19:53:12.732377 [debug] [Thread-2 (]: Began running node test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d
+[0m19:53:12.733158 [debug] [Thread-1 (]: Began running node test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f
+[0m19:53:12.734524 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8, now model.premier_league_analytics.fct_team_season_stats)
+[0m19:53:12.735867 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.fct_match_results, now test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d)
+[0m19:53:12.737188 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157, now test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f)
+[0m19:53:12.738093 [debug] [Thread-4 (]: Began compiling node model.premier_league_analytics.fct_team_season_stats
+[0m19:53:12.738867 [debug] [Thread-3 (]: Began executing node test.premier_league_analytics.unique_dim_team_team_id.069cd44695
+[0m19:53:12.739618 [debug] [Thread-2 (]: Began compiling node test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d
+[0m19:53:12.740295 [debug] [Thread-1 (]: Began compiling node test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f
+[0m19:53:12.748209 [debug] [Thread-4 (]: Writing injected SQL for node "model.premier_league_analytics.fct_team_season_stats"
+[0m19:53:12.749535 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m19:53:12.782637 [debug] [Thread-3 (]: Finished running node test.premier_league_analytics.unique_dim_team_team_id.069cd44695
+[0m19:53:12.787071 [debug] [Thread-2 (]: Writing injected SQL for node "test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d"
+[0m19:53:12.788524 [debug] [Thread-3 (]: Began running node test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162
+[0m19:53:12.795829 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.unique_dim_team_team_id.069cd44695, now test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162)
+[0m19:53:12.793869 [debug] [Thread-4 (]: Began executing node model.premier_league_analytics.fct_team_season_stats
+[0m19:53:12.797064 [debug] [Thread-3 (]: Began compiling node test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162
+[0m19:53:12.798330 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m19:53:12.805420 [debug] [Thread-2 (]: Began executing node test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d
+[0m19:53:12.811854 [debug] [Thread-3 (]: Writing injected SQL for node "test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162"
+[0m19:53:12.816825 [debug] [Thread-4 (]: Finished running node model.premier_league_analytics.fct_team_season_stats
+[0m19:53:12.792504 [debug] [Thread-1 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f"
+[0m19:53:12.817745 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:53:12.819304 [debug] [Thread-4 (]: Began running node test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5
+[0m19:53:12.823720 [debug] [Thread-2 (]: Finished running node test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d
+[0m19:53:12.824558 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.fct_team_season_stats, now test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5)
+[0m19:53:12.825477 [debug] [Thread-3 (]: Began executing node test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162
+[0m19:53:12.826152 [debug] [Thread-1 (]: Began executing node test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f
+[0m19:53:12.826953 [debug] [Thread-4 (]: Began compiling node test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5
+[0m19:53:12.827562 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m19:53:12.828128 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:53:12.834902 [debug] [Thread-4 (]: Writing injected SQL for node "test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5"
+[0m19:53:12.837579 [debug] [Thread-3 (]: Finished running node test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162
+[0m19:53:12.841026 [debug] [Thread-1 (]: Finished running node test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f
+[0m19:53:12.842465 [debug] [Thread-4 (]: Began executing node test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5
+[0m19:53:12.843670 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m19:53:12.848364 [debug] [Thread-4 (]: Finished running node test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5
+[0m19:53:12.850935 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:53:12.852032 [debug] [MainThread]: Connection 'test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f' was properly closed.
+[0m19:53:12.853018 [debug] [MainThread]: Connection 'test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d' was properly closed.
+[0m19:53:12.853915 [debug] [MainThread]: Connection 'test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5' was properly closed.
+[0m19:53:12.854875 [debug] [MainThread]: Connection 'test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162' was properly closed.
+[0m19:53:12.861674 [debug] [MainThread]: Command end result
+[0m19:53:13.078226 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m19:53:13.086246 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m19:53:13.119023 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/run_results.json
+[0m19:53:13.280266 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m19:53:13.280881 [info ] [MainThread]: Building catalog
+[0m19:53:13.308296 [debug] [ThreadPool]: Acquiring new bigquery connection 'pl-football-analytics.information_schema'
+[0m19:53:13.310597 [debug] [ThreadPool]: Acquiring new bigquery connection 'pl-football-analytics.information_schema'
+[0m19:53:13.312427 [debug] [ThreadPool]: Acquiring new bigquery connection 'pl-football-analytics.information_schema'
+[0m19:53:13.395596 [debug] [ThreadPool]: On pl-football-analytics.information_schema: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "connection_name": "pl-football-analytics.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `pl-football-analytics`.`football_analytics_football_analytics`.__TABLES__ tables
+    left join `pl-football-analytics`.`football_analytics_football_analytics`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `pl-football-analytics`.`football_analytics_football_analytics`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('football_analytics_football_analytics')
+                            and upper(table_name) = upper('dim_team')
+                            ) or (
+                                upper(table_schema) = upper('football_analytics_football_analytics')
+                            and upper(table_name) = upper('mf_time_spine')
+                            ) or (
+                                upper(table_schema) = upper('football_analytics_football_analytics')
+                            and upper(table_name) = upper('fct_match_results')
+                            ) or (
+                                upper(table_schema) = upper('football_analytics_football_analytics')
+                            and upper(table_name) = upper('fct_team_season_stats')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `pl-football-analytics`.`football_analytics_football_analytics`.INFORMATION_SCHEMA.COLUMNS columns
+    join `pl-football-analytics`.`football_analytics_football_analytics`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m19:53:13.397474 [debug] [ThreadPool]: On pl-football-analytics.information_schema: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "connection_name": "pl-football-analytics.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `pl-football-analytics`.`football_analytics_football_analytics_staging`.__TABLES__ tables
+    left join `pl-football-analytics`.`football_analytics_football_analytics_staging`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `pl-football-analytics`.`football_analytics_football_analytics_staging`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('football_analytics_football_analytics_staging')
+                            and upper(table_name) = upper('stg_pl_matches')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `pl-football-analytics`.`football_analytics_football_analytics_staging`.INFORMATION_SCHEMA.COLUMNS columns
+    join `pl-football-analytics`.`football_analytics_football_analytics_staging`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m19:53:13.399399 [debug] [ThreadPool]: On pl-football-analytics.information_schema: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "connection_name": "pl-football-analytics.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `pl-football-analytics`.`football_raw`.__TABLES__ tables
+    left join `pl-football-analytics`.`football_raw`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `pl-football-analytics`.`football_raw`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('football_raw')
+                            and upper(table_name) = upper('pl_matches')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `pl-football-analytics`.`football_raw`.INFORMATION_SCHEMA.COLUMNS columns
+    join `pl-football-analytics`.`football_raw`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m19:53:13.401679 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:53:13.402814 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:53:13.404260 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:53:13.978370 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:5a53d5c3-56f2-431a-b879-b2813f394481&page=queryresults
+[0m19:53:14.029953 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:fce373ed-8d8d-485b-a906-ce1065e31f10&page=queryresults
+[0m19:53:14.560766 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:98df4b85-83ca-4731-b377-f728de974978&page=queryresults
+[0m19:53:16.121158 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:53:16.152093 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/catalog.json
+[0m19:53:16.224317 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m19:53:16.231361 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m19:53:16.232407 [info ] [MainThread]: Catalog written to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/catalog.json
+[0m19:53:16.253280 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 31.350317, "process_in_blocks": "0", "process_kernel_time": 2.31469, "process_mem_max_rss": "379006976", "process_out_blocks": "0", "process_user_time": 9.247099}
+[0m19:53:16.254922 [debug] [MainThread]: Command `dbt docs generate` succeeded at 19:53:16.254587 after 31.35 seconds
+[0m19:53:16.256041 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m19:53:16.257077 [debug] [MainThread]: Connection 'pl-football-analytics.information_schema' was properly closed.
+[0m19:53:16.258041 [debug] [MainThread]: Connection 'pl-football-analytics.information_schema' was properly closed.
+[0m19:53:16.259193 [debug] [MainThread]: Connection 'pl-football-analytics.information_schema' was properly closed.
+[0m19:53:16.260345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd7a250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd62690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f6b8250>]}
+[0m19:53:16.261695 [debug] [MainThread]: Flushing usage events
+[0m19:53:16.680943 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:53:37.740504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f75b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f8a710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f8ac90>]}
+
+
+============================== 19:53:37.750095 | ecfd4b00-c00d-4741-84ef-8c380051fc2d ==============================
+[0m19:53:37.750095 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:53:37.751190 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'log_format': 'default', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'no_print': 'None', 'use_experimental_parser': 'False', 'version_check': 'True', 'static_parser': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'write_json': 'True', 'profiles_dir': '/Users/adilosman/.dbt', 'invocation_command': 'dbt run --select time_spine fct_team_season_stats', 'warn_error': 'None', 'log_cache_events': 'False', 'empty': 'False', 'debug': 'False', 'target_path': 'None', 'introspect': 'True', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False'}
+[0m19:53:47.338928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ecfd4b00-c00d-4741-84ef-8c380051fc2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f08590>]}
+[0m19:53:47.446267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ecfd4b00-c00d-4741-84ef-8c380051fc2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e51cf90>]}
+[0m19:53:47.447458 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:53:47.978782 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m19:53:48.406398 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:53:48.407869 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:53:48.574807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ecfd4b00-c00d-4741-84ef-8c380051fc2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12395a710>]}
+[0m19:53:48.854817 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m19:53:48.863772 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m19:53:48.945256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ecfd4b00-c00d-4741-84ef-8c380051fc2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123629ad0>]}
+[0m19:53:48.946682 [info ] [MainThread]: Found 5 models, 11 data tests, 1 source, 520 macros
+[0m19:53:48.947754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ecfd4b00-c00d-4741-84ef-8c380051fc2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12396a7d0>]}
+[0m19:53:48.953828 [info ] [MainThread]: 
+[0m19:53:48.957938 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:53:48.959105 [info ] [MainThread]: 
+[0m19:53:48.966949 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:53:48.975319 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics'
+[0m19:53:48.976190 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:53:49.372285 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pl-football-analytics, now list_pl-football-analytics_football_analytics_football_analytics)
+[0m19:53:49.373768 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics_football_analytics_football_analytics_staging'
+[0m19:53:49.374705 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:53:49.375368 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:53:49.722090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ecfd4b00-c00d-4741-84ef-8c380051fc2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100eb4d0>]}
+[0m19:53:49.722851 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:53:49.730699 [debug] [Thread-1 (]: Began running node model.premier_league_analytics.fct_team_season_stats
+[0m19:53:49.731303 [debug] [Thread-2 (]: Began running node model.premier_league_analytics.time_spine
+[0m19:53:49.732000 [info ] [Thread-1 (]: 1 of 2 START sql table model football_analytics_football_analytics.fct_team_season_stats  [RUN]
+[0m19:53:49.732756 [info ] [Thread-2 (]: 2 of 2 START sql table model football_analytics_football_analytics.mf_time_spine  [RUN]
+[0m19:53:49.733493 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pl-football-analytics_football_analytics_football_analytics, now model.premier_league_analytics.fct_team_season_stats)
+[0m19:53:49.734048 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_pl-football-analytics_football_analytics_football_analytics_staging, now model.premier_league_analytics.time_spine)
+[0m19:53:49.734543 [debug] [Thread-1 (]: Began compiling node model.premier_league_analytics.fct_team_season_stats
+[0m19:53:49.734975 [debug] [Thread-2 (]: Began compiling node model.premier_league_analytics.time_spine
+[0m19:53:49.763577 [debug] [Thread-2 (]: Writing injected SQL for node "model.premier_league_analytics.time_spine"
+[0m19:53:49.762881 [debug] [Thread-1 (]: Writing injected SQL for node "model.premier_league_analytics.fct_team_season_stats"
+[0m19:53:49.767093 [debug] [Thread-2 (]: Began executing node model.premier_league_analytics.time_spine
+[0m19:53:49.773127 [debug] [Thread-1 (]: Began executing node model.premier_league_analytics.fct_team_season_stats
+[0m19:53:49.801536 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:53:49.795376 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:53:50.230661 [debug] [Thread-2 (]: Writing runtime sql for node "model.premier_league_analytics.time_spine"
+[0m19:53:50.231365 [debug] [Thread-1 (]: Writing runtime sql for node "model.premier_league_analytics.fct_team_season_stats"
+[0m19:53:50.236024 [debug] [Thread-1 (]: On model.premier_league_analytics.fct_team_season_stats: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "node_id": "model.premier_league_analytics.fct_team_season_stats"} */
+
+  
+    
+
+    create or replace table `pl-football-analytics`.`football_analytics_football_analytics`.`fct_team_season_stats`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with all_matches as (
+
+    select
+      season,
+      season_start_year,
+      season_end_year,
+      match_date,
+      home_team_id as team_id,
+      home_team_name as team_name,
+      'H' as venue,
+      home_goals as goals_for,
+      away_goals as goals_against,
+      home_points as points
+    from `pl-football-analytics`.`football_analytics_football_analytics`.`fct_match_results`
+
+    union all
+
+    select
+      season,
+      season_start_year,
+      season_end_year,
+      match_date,
+      away_team_id as team_id,
+      away_team_name as team_name,
+      'A' as venue,
+      away_goals as goals_for,
+      home_goals as goals_against,
+      away_points as points
+    from `pl-football-analytics`.`football_analytics_football_analytics`.`fct_match_results`
+
+),
+
+agg as (
+
+    select
+      team_id,
+      team_name,
+      season,
+      season_start_year,
+      season_end_year,
+
+      count(*) as matches_played,
+      sum(case when points = 3 then 1 else 0 end) as wins,
+      sum(case when points = 1 then 1 else 0 end) as draws,
+      sum(case when points = 0 then 1 else 0 end) as losses,
+
+      sum(goals_for) as goals_for,
+      sum(goals_against) as goals_against,
+      sum(goals_for - goals_against) as goal_diff,
+      sum(points) as points,
+
+      sum(case when venue = 'H' then 1 else 0 end) as home_matches,
+      sum(case when venue = 'A' then 1 else 0 end) as away_matches
+    from all_matches
+    group by
+      team_id,
+      team_name,
+      season,
+      season_start_year,
+      season_end_year
+)
+
+select
+  agg.*,
+  date(season_start_year, 8, 1) as season_start_date,
+  date(season_end_year, 5, 31) as season_end_date
+from agg
+    );
+  
+[0m19:53:50.238079 [debug] [Thread-2 (]: On model.premier_league_analytics.time_spine: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "node_id": "model.premier_league_analytics.time_spine"} */
+
+  
+    
+
+    create or replace table `pl-football-analytics`.`football_analytics_football_analytics`.`mf_time_spine`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+-- Time spine for MetricFlow (daily grain).
+with spine as (
+  select day as date_day
+  from unnest(generate_date_array(date '2014-07-01', date '2025-06-30', interval 1 day)) as day
+)
+
+select * from spine
+    );
+  
+[0m19:53:50.516294 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:dc83ddfc-1442-4bef-b302-e6ceb2f27150&page=queryresults
+[0m19:53:50.697777 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:4c08dafb-f18f-4e78-8e05-ddd64a6b3854&page=queryresults
+[0m19:53:52.634787 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecfd4b00-c00d-4741-84ef-8c380051fc2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123be0ad0>]}
+[0m19:53:52.636404 [info ] [Thread-2 (]: 2 of 2 OK created sql table model football_analytics_football_analytics.mf_time_spine  [[32mCREATE TABLE (4.0k rows, 0 processed)[0m in 2.89s]
+[0m19:53:52.637191 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecfd4b00-c00d-4741-84ef-8c380051fc2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123b0c410>]}
+[0m19:53:52.638344 [debug] [Thread-2 (]: Finished running node model.premier_league_analytics.time_spine
+[0m19:53:52.639440 [info ] [Thread-1 (]: 1 of 2 OK created sql table model football_analytics_football_analytics.fct_team_season_stats  [[32mCREATE TABLE (0.0 rows, 0 processed)[0m in 2.90s]
+[0m19:53:52.641057 [debug] [Thread-1 (]: Finished running node model.premier_league_analytics.fct_team_season_stats
+[0m19:53:52.645753 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:53:52.655233 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:53:52.656325 [debug] [MainThread]: Connection 'model.premier_league_analytics.fct_team_season_stats' was properly closed.
+[0m19:53:52.657237 [debug] [MainThread]: Connection 'model.premier_league_analytics.time_spine' was properly closed.
+[0m19:53:52.658262 [info ] [MainThread]: 
+[0m19:53:52.659392 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 3.69 seconds (3.69s).
+[0m19:53:52.662156 [debug] [MainThread]: Command end result
+[0m19:53:52.703844 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m19:53:52.710195 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m19:53:52.722210 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/run_results.json
+[0m19:53:52.722744 [info ] [MainThread]: 
+[0m19:53:52.723411 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:53:52.723942 [info ] [MainThread]: 
+[0m19:53:52.724454 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m19:53:52.732035 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 15.137694, "process_in_blocks": "0", "process_kernel_time": 2.313569, "process_mem_max_rss": "376815616", "process_out_blocks": "0", "process_user_time": 9.165532}
+[0m19:53:52.732962 [debug] [MainThread]: Command `dbt run` succeeded at 19:53:52.732748 after 15.14 seconds
+[0m19:53:52.733608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f6fc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f07ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c6fad10>]}
+[0m19:53:52.734135 [debug] [MainThread]: Flushing usage events
+[0m19:53:53.082226 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:54:04.729088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1140995d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1141126d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114112fd0>]}
+
+
+============================== 19:54:04.739960 | c4507636-22a7-4d3b-8978-bbca9f9cf8b7 ==============================
+[0m19:54:04.739960 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:54:04.741595 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'quiet': 'False', 'write_json': 'True', 'debug': 'False', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'introspect': 'True', 'invocation_command': 'dbt docs generate', 'profiles_dir': '/Users/adilosman/.dbt', 'printer_width': '80', 'fail_fast': 'False', 'use_colors': 'True', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'version_check': 'True', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'target_path': 'None'}
+[0m19:54:15.532558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c4507636-22a7-4d3b-8978-bbca9f9cf8b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1267f9e50>]}
+[0m19:54:15.635823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c4507636-22a7-4d3b-8978-bbca9f9cf8b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11165c7d0>]}
+[0m19:54:15.636910 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m19:54:16.266329 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m19:54:16.754796 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:54:16.756042 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:54:16.855202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c4507636-22a7-4d3b-8978-bbca9f9cf8b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1140d7190>]}
+[0m19:54:16.933029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c4507636-22a7-4d3b-8978-bbca9f9cf8b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1266e6810>]}
+[0m19:54:16.933853 [info ] [MainThread]: Found 5 models, 11 data tests, 1 source, 520 macros
+[0m19:54:16.934603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c4507636-22a7-4d3b-8978-bbca9f9cf8b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x126ab90d0>]}
+[0m19:54:16.937939 [info ] [MainThread]: 
+[0m19:54:16.938621 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:54:16.939124 [info ] [MainThread]: 
+[0m19:54:16.940676 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:54:16.952976 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics_football_analytics_football_analytics_staging'
+[0m19:54:16.954699 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics_football_analytics_football_analytics'
+[0m19:54:16.957218 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:54:16.958281 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:54:17.373575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c4507636-22a7-4d3b-8978-bbca9f9cf8b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1266c7750>]}
+[0m19:54:17.374780 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:54:17.385445 [debug] [Thread-1 (]: Began running node model.premier_league_analytics.stg_pl_matches
+[0m19:54:17.386346 [debug] [Thread-2 (]: Began running node model.premier_league_analytics.time_spine
+[0m19:54:17.387340 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pl-football-analytics_football_analytics_football_analytics_staging, now model.premier_league_analytics.stg_pl_matches)
+[0m19:54:17.388215 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_pl-football-analytics_football_analytics_football_analytics, now model.premier_league_analytics.time_spine)
+[0m19:54:17.389006 [debug] [Thread-1 (]: Began compiling node model.premier_league_analytics.stg_pl_matches
+[0m19:54:17.389685 [debug] [Thread-2 (]: Began compiling node model.premier_league_analytics.time_spine
+[0m19:54:17.411828 [debug] [Thread-1 (]: Writing injected SQL for node "model.premier_league_analytics.stg_pl_matches"
+[0m19:54:17.418764 [debug] [Thread-2 (]: Writing injected SQL for node "model.premier_league_analytics.time_spine"
+[0m19:54:17.421885 [debug] [Thread-2 (]: Began executing node model.premier_league_analytics.time_spine
+[0m19:54:17.422874 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:54:17.426340 [debug] [Thread-2 (]: Finished running node model.premier_league_analytics.time_spine
+[0m19:54:17.428042 [debug] [Thread-1 (]: Began executing node model.premier_league_analytics.stg_pl_matches
+[0m19:54:17.429068 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:54:17.432423 [debug] [Thread-1 (]: Finished running node model.premier_league_analytics.stg_pl_matches
+[0m19:54:17.434214 [debug] [Thread-4 (]: Began running node model.premier_league_analytics.dim_team
+[0m19:54:17.434854 [debug] [Thread-3 (]: Began running node test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666
+[0m19:54:17.435567 [debug] [Thread-2 (]: Began running node test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663
+[0m19:54:17.436071 [debug] [Thread-1 (]: Began running node test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd
+[0m19:54:17.436760 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.premier_league_analytics.dim_team'
+[0m19:54:17.437376 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666'
+[0m19:54:17.438027 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.time_spine, now test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663)
+[0m19:54:17.438561 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.stg_pl_matches, now test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd)
+[0m19:54:17.439036 [debug] [Thread-4 (]: Began compiling node model.premier_league_analytics.dim_team
+[0m19:54:17.439499 [debug] [Thread-3 (]: Began compiling node test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666
+[0m19:54:17.439962 [debug] [Thread-2 (]: Began compiling node test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663
+[0m19:54:17.440476 [debug] [Thread-1 (]: Began compiling node test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd
+[0m19:54:17.446468 [debug] [Thread-4 (]: Writing injected SQL for node "model.premier_league_analytics.dim_team"
+[0m19:54:17.476126 [debug] [Thread-2 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663"
+[0m19:54:17.476572 [debug] [Thread-3 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666"
+[0m19:54:17.482017 [debug] [Thread-1 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd"
+[0m19:54:17.484465 [debug] [Thread-4 (]: Began executing node model.premier_league_analytics.dim_team
+[0m19:54:17.485442 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m19:54:17.486146 [debug] [Thread-2 (]: Began executing node test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663
+[0m19:54:17.486667 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:54:17.487107 [debug] [Thread-3 (]: Began executing node test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666
+[0m19:54:17.489362 [debug] [Thread-4 (]: Finished running node model.premier_league_analytics.dim_team
+[0m19:54:17.489914 [debug] [Thread-1 (]: Began executing node test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd
+[0m19:54:17.490421 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m19:54:17.494637 [debug] [Thread-2 (]: Finished running node test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663
+[0m19:54:17.495591 [debug] [Thread-4 (]: Began running node test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2
+[0m19:54:17.496699 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:54:17.497598 [debug] [Thread-2 (]: Began running node test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8
+[0m19:54:17.500009 [debug] [Thread-3 (]: Finished running node test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666
+[0m19:54:17.500747 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.dim_team, now test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2)
+[0m19:54:17.501661 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_stg_pl_matches_home_team_name.6b9c416663, now test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8)
+[0m19:54:17.504041 [debug] [Thread-1 (]: Finished running node test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd
+[0m19:54:17.505136 [debug] [Thread-3 (]: Began running node model.premier_league_analytics.fct_match_results
+[0m19:54:17.506219 [debug] [Thread-4 (]: Began compiling node test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2
+[0m19:54:17.507227 [debug] [Thread-2 (]: Began compiling node test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8
+[0m19:54:17.508254 [debug] [Thread-1 (]: Began running node test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157
+[0m19:54:17.509542 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_stg_pl_matches_away_team_name.631f27b666, now model.premier_league_analytics.fct_match_results)
+[0m19:54:17.518963 [debug] [Thread-4 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2"
+[0m19:54:17.527589 [debug] [Thread-2 (]: Writing injected SQL for node "test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8"
+[0m19:54:17.528462 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_stg_pl_matches_match_date.16fd9fb8fd, now test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157)
+[0m19:54:17.529033 [debug] [Thread-3 (]: Began compiling node model.premier_league_analytics.fct_match_results
+[0m19:54:17.530075 [debug] [Thread-1 (]: Began compiling node test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157
+[0m19:54:17.537249 [debug] [Thread-3 (]: Writing injected SQL for node "model.premier_league_analytics.fct_match_results"
+[0m19:54:17.543557 [debug] [Thread-1 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157"
+[0m19:54:17.544644 [debug] [Thread-4 (]: Began executing node test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2
+[0m19:54:17.545252 [debug] [Thread-2 (]: Began executing node test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8
+[0m19:54:17.546506 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m19:54:17.547629 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:54:17.548766 [debug] [Thread-1 (]: Began executing node test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157
+[0m19:54:17.549437 [debug] [Thread-3 (]: Began executing node model.premier_league_analytics.fct_match_results
+[0m19:54:17.551780 [debug] [Thread-4 (]: Finished running node test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2
+[0m19:54:17.552666 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:54:17.556652 [debug] [Thread-2 (]: Finished running node test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8
+[0m19:54:17.557932 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m19:54:17.559319 [debug] [Thread-4 (]: Began running node test.premier_league_analytics.unique_dim_team_team_id.069cd44695
+[0m19:54:17.565070 [debug] [Thread-1 (]: Finished running node test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157
+[0m19:54:17.566285 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_stg_pl_matches_match_id.c1376eedf2, now test.premier_league_analytics.unique_dim_team_team_id.069cd44695)
+[0m19:54:17.568493 [debug] [Thread-3 (]: Finished running node model.premier_league_analytics.fct_match_results
+[0m19:54:17.569372 [debug] [Thread-4 (]: Began compiling node test.premier_league_analytics.unique_dim_team_team_id.069cd44695
+[0m19:54:17.570297 [debug] [Thread-2 (]: Began running node model.premier_league_analytics.fct_team_season_stats
+[0m19:54:17.577800 [debug] [Thread-1 (]: Began running node test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d
+[0m19:54:17.579034 [debug] [Thread-4 (]: Writing injected SQL for node "test.premier_league_analytics.unique_dim_team_team_id.069cd44695"
+[0m19:54:17.579537 [debug] [Thread-3 (]: Began running node test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f
+[0m19:54:17.580186 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.unique_stg_pl_matches_match_id.8c0a9521d8, now model.premier_league_analytics.fct_team_season_stats)
+[0m19:54:17.580958 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_dim_team_team_id.7b67f9e157, now test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d)
+[0m19:54:17.581753 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.fct_match_results, now test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f)
+[0m19:54:17.582456 [debug] [Thread-2 (]: Began compiling node model.premier_league_analytics.fct_team_season_stats
+[0m19:54:17.583103 [debug] [Thread-1 (]: Began compiling node test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d
+[0m19:54:17.583726 [debug] [Thread-3 (]: Began compiling node test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f
+[0m19:54:17.584308 [debug] [Thread-4 (]: Began executing node test.premier_league_analytics.unique_dim_team_team_id.069cd44695
+[0m19:54:17.588470 [debug] [Thread-2 (]: Writing injected SQL for node "model.premier_league_analytics.fct_team_season_stats"
+[0m19:54:17.605136 [debug] [Thread-1 (]: Writing injected SQL for node "test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d"
+[0m19:54:17.616661 [debug] [Thread-3 (]: Writing injected SQL for node "test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f"
+[0m19:54:17.618206 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m19:54:17.621879 [debug] [Thread-4 (]: Finished running node test.premier_league_analytics.unique_dim_team_team_id.069cd44695
+[0m19:54:17.622850 [debug] [Thread-4 (]: Began running node test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162
+[0m19:54:17.623620 [debug] [Thread-3 (]: Began executing node test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f
+[0m19:54:17.624254 [debug] [Thread-2 (]: Began executing node model.premier_league_analytics.fct_team_season_stats
+[0m19:54:17.624836 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.unique_dim_team_team_id.069cd44695, now test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162)
+[0m19:54:17.625607 [debug] [Thread-1 (]: Began executing node test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d
+[0m19:54:17.626137 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m19:54:17.626903 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:54:17.628086 [debug] [Thread-4 (]: Began compiling node test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162
+[0m19:54:17.628836 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:54:17.631703 [debug] [Thread-3 (]: Finished running node test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f
+[0m19:54:17.638740 [debug] [Thread-4 (]: Writing injected SQL for node "test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162"
+[0m19:54:17.641659 [debug] [Thread-2 (]: Finished running node model.premier_league_analytics.fct_team_season_stats
+[0m19:54:17.646431 [debug] [Thread-1 (]: Finished running node test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d
+[0m19:54:17.648171 [debug] [Thread-3 (]: Began running node test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5
+[0m19:54:17.649303 [debug] [Thread-4 (]: Began executing node test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162
+[0m19:54:17.650443 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.premier_league_analytics.not_null_fct_match_results_match_id.158786e36f, now test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5)
+[0m19:54:17.651592 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m19:54:17.652629 [debug] [Thread-3 (]: Began compiling node test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5
+[0m19:54:17.662816 [debug] [Thread-4 (]: Finished running node test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162
+[0m19:54:17.667372 [debug] [Thread-3 (]: Writing injected SQL for node "test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5"
+[0m19:54:17.669817 [debug] [Thread-3 (]: Began executing node test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5
+[0m19:54:17.670534 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m19:54:17.673033 [debug] [Thread-3 (]: Finished running node test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5
+[0m19:54:17.674594 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:54:17.675172 [debug] [MainThread]: Connection 'test.premier_league_analytics.accepted_values_fct_match_results_result__H__A__D.c75485f35d' was properly closed.
+[0m19:54:17.675619 [debug] [MainThread]: Connection 'model.premier_league_analytics.fct_team_season_stats' was properly closed.
+[0m19:54:17.676024 [debug] [MainThread]: Connection 'test.premier_league_analytics.unique_fct_match_results_match_id.a6ac9d1162' was properly closed.
+[0m19:54:17.676423 [debug] [MainThread]: Connection 'test.premier_league_analytics.unique_fct_team_season_stats_team_id_season.7df4e1e8f5' was properly closed.
+[0m19:54:17.682157 [debug] [MainThread]: Command end result
+[0m19:54:17.878854 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m19:54:17.888507 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m19:54:17.906911 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/run_results.json
+[0m19:54:17.915153 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m19:54:17.916524 [info ] [MainThread]: Building catalog
+[0m19:54:17.924619 [debug] [ThreadPool]: Acquiring new bigquery connection 'pl-football-analytics.information_schema'
+[0m19:54:17.928336 [debug] [ThreadPool]: Acquiring new bigquery connection 'pl-football-analytics.information_schema'
+[0m19:54:17.929731 [debug] [ThreadPool]: Acquiring new bigquery connection 'pl-football-analytics.information_schema'
+[0m19:54:18.007605 [debug] [ThreadPool]: On pl-football-analytics.information_schema: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "connection_name": "pl-football-analytics.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `pl-football-analytics`.`football_analytics_football_analytics`.__TABLES__ tables
+    left join `pl-football-analytics`.`football_analytics_football_analytics`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `pl-football-analytics`.`football_analytics_football_analytics`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('football_analytics_football_analytics')
+                            and upper(table_name) = upper('mf_time_spine')
+                            ) or (
+                                upper(table_schema) = upper('football_analytics_football_analytics')
+                            and upper(table_name) = upper('fct_team_season_stats')
+                            ) or (
+                                upper(table_schema) = upper('football_analytics_football_analytics')
+                            and upper(table_name) = upper('dim_team')
+                            ) or (
+                                upper(table_schema) = upper('football_analytics_football_analytics')
+                            and upper(table_name) = upper('fct_match_results')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `pl-football-analytics`.`football_analytics_football_analytics`.INFORMATION_SCHEMA.COLUMNS columns
+    join `pl-football-analytics`.`football_analytics_football_analytics`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m19:54:18.023030 [debug] [ThreadPool]: On pl-football-analytics.information_schema: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "connection_name": "pl-football-analytics.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `pl-football-analytics`.`football_analytics_football_analytics_staging`.__TABLES__ tables
+    left join `pl-football-analytics`.`football_analytics_football_analytics_staging`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `pl-football-analytics`.`football_analytics_football_analytics_staging`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('football_analytics_football_analytics_staging')
+                            and upper(table_name) = upper('stg_pl_matches')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `pl-football-analytics`.`football_analytics_football_analytics_staging`.INFORMATION_SCHEMA.COLUMNS columns
+    join `pl-football-analytics`.`football_analytics_football_analytics_staging`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m19:54:18.024568 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:54:18.026323 [debug] [ThreadPool]: On pl-football-analytics.information_schema: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "connection_name": "pl-football-analytics.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `pl-football-analytics`.`football_raw`.__TABLES__ tables
+    left join `pl-football-analytics`.`football_raw`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `pl-football-analytics`.`football_raw`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('football_raw')
+                            and upper(table_name) = upper('pl_matches')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `pl-football-analytics`.`football_raw`.INFORMATION_SCHEMA.COLUMNS columns
+    join `pl-football-analytics`.`football_raw`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m19:54:18.028278 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:54:18.091902 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:54:18.646163 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:5a17a942-480b-4e6a-a678-6212d861a1b8&page=queryresults
+[0m19:54:18.698848 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:184eb231-a56a-4d05-a68c-46bf4e75aa5e&page=queryresults
+[0m19:54:18.741115 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:6c6ecf88-4fe6-4ce4-b93d-50ffb338d8fb&page=queryresults
+[0m19:54:20.015073 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:54:20.046100 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/catalog.json
+[0m19:54:20.099644 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m19:54:20.106337 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m19:54:20.108075 [info ] [MainThread]: Catalog written to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/catalog.json
+[0m19:54:20.137281 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 15.5838585, "process_in_blocks": "0", "process_kernel_time": 2.494008, "process_mem_max_rss": "378785792", "process_out_blocks": "0", "process_user_time": 9.855587}
+[0m19:54:20.138395 [debug] [MainThread]: Command `dbt docs generate` succeeded at 19:54:20.138194 after 15.59 seconds
+[0m19:54:20.139034 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m19:54:20.139687 [debug] [MainThread]: Connection 'pl-football-analytics.information_schema' was properly closed.
+[0m19:54:20.140575 [debug] [MainThread]: Connection 'pl-football-analytics.information_schema' was properly closed.
+[0m19:54:20.141465 [debug] [MainThread]: Connection 'pl-football-analytics.information_schema' was properly closed.
+[0m19:54:20.144411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11412f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11412ffd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x126a58490>]}
+[0m19:54:20.145760 [debug] [MainThread]: Flushing usage events
+[0m19:54:20.506333 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:55:03.778929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1134eba50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1134eb450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11350aa10>]}
+
+
+============================== 19:55:03.797964 | c8c10b05-fa56-4bcb-a7de-550bb7629549 ==============================
+[0m19:55:03.797964 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:55:03.800015 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'static_parser': 'True', 'no_print': 'None', 'printer_width': '80', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'debug': 'False', 'partial_parse': 'True', 'version_check': 'True', 'target_path': 'None', 'use_colors': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'quiet': 'False', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'profiles_dir': '/Users/adilosman/.dbt', 'invocation_command': 'dbt docs serve --no-browser --port 8080'}
+[0m19:55:14.831858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c8c10b05-fa56-4bcb-a7de-550bb7629549', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x125b10cd0>]}
+[0m19:55:14.973457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c8c10b05-fa56-4bcb-a7de-550bb7629549', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a74810>]}
+[0m20:04:33.915763 [error] [MainThread]: Encountered an error:
+
+[0m20:04:33.985924 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/adilosman/Desktop/premier-league-analytics-warehouse/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adilosman/Desktop/premier-league-analytics-warehouse/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adilosman/Desktop/premier-league-analytics-warehouse/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adilosman/Desktop/premier-league-analytics-warehouse/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adilosman/Desktop/premier-league-analytics-warehouse/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adilosman/Desktop/premier-league-analytics-warehouse/.venv/lib/python3.11/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/adilosman/Desktop/premier-league-analytics-warehouse/.venv/lib/python3.11/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/usr/local/Cellar/python@3.11/3.11.14_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.14_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m20:04:34.017988 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 570.4224, "process_in_blocks": "0", "process_kernel_time": 2.326548, "process_mem_max_rss": "356831232", "process_out_blocks": "0", "process_user_time": 8.781816}
+[0m20:04:34.028800 [debug] [MainThread]: Command `dbt docs serve` failed at 20:04:34.028161 after 570.44 seconds
+[0m20:04:34.032795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11350a210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11350a790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113484b90>]}
+[0m20:04:34.035346 [debug] [MainThread]: Flushing usage events
+[0m20:04:34.601249 [debug] [MainThread]: An error was encountered while trying to flush usage events
