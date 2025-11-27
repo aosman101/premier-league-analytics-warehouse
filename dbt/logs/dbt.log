@@ -3267,3 +3267,51 @@ having count(*) > 1
 [0m20:00:45.311654 [debug] [MainThread]: Command `dbt test` succeeded at 20:00:45.311317 after 12.26 seconds
 [0m20:00:45.312502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ed73e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11013f250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b63a710>]}
 [0m20:00:45.313352 [debug] [MainThread]: Flushing usage events
+[0m18:36:12.641973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109162510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090f9910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10916e690>]}
+
+
+============================== 18:36:12.667632 | d973c7da-2fe2-4a8b-bca9-26184883fbe4 ==============================
+[0m18:36:12.667632 [info ] [MainThread]: Running with dbt=1.10.15
+[0m18:36:12.674395 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/adilosman/.dbt', 'cache_selected_only': 'False', 'version_check': 'True', 'invocation_command': 'dbt docs generate', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'write_json': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'use_colors': 'True', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'static_parser': 'True', 'empty': 'None', 'debug': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'partial_parse': 'True', 'printer_width': '80', 'no_print': 'None', 'warn_error': 'None', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default'}
+[0m18:36:34.290863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd973c7da-2fe2-4a8b-bca9-26184883fbe4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b7f1f90>]}
+[0m18:36:34.475637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd973c7da-2fe2-4a8b-bca9-26184883fbe4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106711d10>]}
+[0m18:36:34.476952 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m18:36:36.373796 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m18:36:36.946965 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m18:36:36.954546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd973c7da-2fe2-4a8b-bca9-26184883fbe4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082a4190>]}
+[0m18:36:42.635644 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values`. Arguments to generic tests
+should be nested under the `arguments` property.`
+[0m18:36:42.636951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd973c7da-2fe2-4a8b-bca9-26184883fbe4', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11bf29cd0>]}
+[0m18:36:43.224414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd973c7da-2fe2-4a8b-bca9-26184883fbe4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11bda3850>]}
+[0m18:36:43.359033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd973c7da-2fe2-4a8b-bca9-26184883fbe4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c18ae50>]}
+[0m18:36:43.360225 [info ] [MainThread]: Found 4 models, 11 data tests, 1 source, 520 macros
+[0m18:36:43.360885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd973c7da-2fe2-4a8b-bca9-26184883fbe4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082304d0>]}
+[0m18:36:43.366519 [info ] [MainThread]: 
+[0m18:36:43.368698 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:36:43.374752 [info ] [MainThread]: 
+[0m18:36:43.378474 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:36:43.441586 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics_football_analytics_football_analytics_staging'
+[0m18:36:43.443337 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics_football_analytics_football_analytics'
+[0m18:36:43.445529 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:36:43.449849 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:36:43.451001 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: '/absolute/path/to/your/service-account.json''
+[0m18:36:43.461985 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: '/absolute/path/to/your/service-account.json''
+[0m18:36:43.470683 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:36:43.472109 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: '/absolute/path/to/your/service-account.json''
+[0m18:36:43.473633 [error] [MainThread]: Encountered an error:
+Database Error
+  [Errno 2] No such file or directory: '/absolute/path/to/your/service-account.json'
+[0m18:36:43.478808 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:36:43.546560 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": false, "command_wall_clock_time": 31.79444, "process_in_blocks": "0", "process_kernel_time": 3.402878, "process_mem_max_rss": "371359744", "process_out_blocks": "0", "process_user_time": 13.469994}
+[0m18:36:43.548277 [debug] [MainThread]: Command `dbt docs generate` failed at 18:36:43.547995 after 31.80 seconds
+[0m18:36:43.549138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090f9910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090fb190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109107150>]}
+[0m18:36:43.549855 [debug] [MainThread]: Flushing usage events
+[0m18:36:44.141096 [debug] [MainThread]: An error was encountered while trying to flush usage events
