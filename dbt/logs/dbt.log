@@ -12295,3 +12295,101 @@ parsing.
 ============================== 15:36:47.042639 | 8daebda4-4599-4a52-8343-3c2472d21064 ==============================
 [0m15:36:47.042639 [info ] [MainThread]: Running with dbt=1.10.15
 [0m15:36:47.044377 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/adilosman/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'invocation_command': 'dbt run --select dim_team', 'use_experimental_parser': 'False', 'version_check': 'True', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'log_format': 'default', 'no_print': 'None', 'debug': 'False', 'cache_selected_only': 'False', 'introspect': 'True', 'partial_parse': 'True', 'printer_width': '80', 'empty': 'False', 'warn_error': 'None', 'target_path': 'None', 'static_parser': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'use_colors': 'True'}
+[0m15:37:10.531526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8daebda4-4599-4a52-8343-3c2472d21064', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x125bab5d0>]}
+[0m15:37:10.691764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8daebda4-4599-4a52-8343-3c2472d21064', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a5c090>]}
+[0m15:37:10.692997 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m15:37:11.546149 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m15:37:12.440044 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:37:12.441389 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:37:12.635319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8daebda4-4599-4a52-8343-3c2472d21064', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x125c7d1d0>]}
+[0m15:37:12.854421 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m15:37:12.862059 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m15:37:12.971306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8daebda4-4599-4a52-8343-3c2472d21064', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12622fe50>]}
+[0m15:37:12.978075 [info ] [MainThread]: Found 5 models, 11 data tests, 1 source, 520 macros
+[0m15:37:12.979403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8daebda4-4599-4a52-8343-3c2472d21064', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x125c7d210>]}
+[0m15:37:12.983650 [info ] [MainThread]: 
+[0m15:37:12.984805 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:37:12.986490 [info ] [MainThread]: 
+[0m15:37:12.987876 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:37:12.991810 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics'
+[0m15:37:12.992597 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:37:13.458110 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pl-football-analytics, now list_pl-football-analytics_football_analytics_football_analytics)
+[0m15:37:13.459612 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics_football_analytics_football_analytics_staging'
+[0m15:37:13.460776 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:37:13.461755 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:37:13.907087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8daebda4-4599-4a52-8343-3c2472d21064', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x125af2e90>]}
+[0m15:37:13.908444 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:37:13.920729 [debug] [Thread-1 (]: Began running node model.premier_league_analytics.dim_team
+[0m15:37:13.922250 [info ] [Thread-1 (]: 1 of 1 START sql table model football_analytics_football_analytics.dim_team .... [RUN]
+[0m15:37:13.923645 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pl-football-analytics_football_analytics_football_analytics, now model.premier_league_analytics.dim_team)
+[0m15:37:13.924832 [debug] [Thread-1 (]: Began compiling node model.premier_league_analytics.dim_team
+[0m15:37:13.950808 [debug] [Thread-1 (]: Writing injected SQL for node "model.premier_league_analytics.dim_team"
+[0m15:37:13.955758 [debug] [Thread-1 (]: Began executing node model.premier_league_analytics.dim_team
+[0m15:37:13.998993 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:37:14.378548 [debug] [Thread-1 (]: Writing runtime sql for node "model.premier_league_analytics.dim_team"
+[0m15:37:14.396808 [debug] [Thread-1 (]: On model.premier_league_analytics.dim_team: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "node_id": "model.premier_league_analytics.dim_team"} */
+
+  
+    
+
+    create or replace table `pl-football-analytics`.`football_analytics_football_analytics`.`dim_team`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with teams as (
+
+    select
+      home_team_name as team_name,
+      home_team_code as team_code
+    from `pl-football-analytics`.`football_analytics_football_analytics_staging`.`stg_pl_matches`
+
+    union distinct
+
+    select
+      away_team_name as team_name,
+      away_team_code as team_code
+    from `pl-football-analytics`.`football_analytics_football_analytics_staging`.`stg_pl_matches`
+
+),
+
+final as (
+
+    select
+      -- Deterministic ID so it stays stable across builds
+      to_hex(md5(lower(trim(team_name)))) as team_id,
+      team_name,
+      team_code
+    from teams
+
+)
+
+select * from final
+    );
+  
+[0m15:37:15.026762 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:fcb3882c-b96e-465b-b7dc-ca40f107edac&page=queryresults
+[0m15:37:18.261801 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8daebda4-4599-4a52-8343-3c2472d21064', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1262685d0>]}
+[0m15:37:18.264676 [info ] [Thread-1 (]: 1 of 1 OK created sql table model football_analytics_football_analytics.dim_team  [[32mCREATE TABLE (0.0 rows, 346.8 KiB processed)[0m in 4.33s]
+[0m15:37:18.271224 [debug] [Thread-1 (]: Finished running node model.premier_league_analytics.dim_team
+[0m15:37:18.382174 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:37:18.388307 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:37:18.389219 [debug] [MainThread]: Connection 'model.premier_league_analytics.dim_team' was properly closed.
+[0m15:37:18.389969 [debug] [MainThread]: Connection 'list_pl-football-analytics_football_analytics_football_analytics_staging' was properly closed.
+[0m15:37:18.390869 [info ] [MainThread]: 
+[0m15:37:18.392661 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 5.40 seconds (5.40s).
+[0m15:37:18.394765 [debug] [MainThread]: Command end result
+[0m15:37:18.467317 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m15:37:18.506449 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m15:37:18.558288 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/run_results.json
+[0m15:37:18.559213 [info ] [MainThread]: 
+[0m15:37:18.560285 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:37:18.561093 [info ] [MainThread]: 
+[0m15:37:18.562094 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:37:18.575536 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 32.049683, "process_in_blocks": "0", "process_kernel_time": 2.820834, "process_mem_max_rss": "376209408", "process_out_blocks": "0", "process_user_time": 10.251322}
+[0m15:37:18.576916 [debug] [MainThread]: Command `dbt run` succeeded at 15:37:18.576658 after 32.05 seconds
+[0m15:37:18.577977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1135138d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113513c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ecdb110>]}
+[0m15:37:18.578951 [debug] [MainThread]: Flushing usage events
+[0m15:37:18.972078 [debug] [MainThread]: An error was encountered while trying to flush usage events
