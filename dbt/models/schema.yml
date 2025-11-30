@@ -6,7 +6,7 @@ sources:
     schema: football_raw
     tables:
       - name: pl_matches
-        description: "Raw Premier League matches from openfootball (2016-17 to 2024-25)."
+        description: "Raw Premier League matches from openfootball (2014-15 to 2024-25)."
 
 models:
   - name: stg_pl_matches
