@@ -17,7 +17,8 @@ with teams as (
 final as (
 
     select
-      generate_uuid() as team_id,
+      -- Deterministic ID so it stays stable across builds
+      to_hex(md5(lower(trim(team_name)))) as team_id,
       team_name,
       team_code
     from teams
