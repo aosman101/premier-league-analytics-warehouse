@@ -12393,3 +12393,402 @@ select * from final
 [0m15:37:18.577977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1135138d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113513c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ecdb110>]}
 [0m15:37:18.578951 [debug] [MainThread]: Flushing usage events
 [0m15:37:18.972078 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:50:09.497042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11150f850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1115227d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111522d50>]}
+
+
+============================== 15:50:09.513444 | a2b3065a-764c-4349-9f5e-26ace6a785c7 ==============================
+[0m15:50:09.513444 [info ] [MainThread]: Running with dbt=1.10.15
+[0m15:50:09.514777 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'fail_fast': 'False', 'empty': 'False', 'printer_width': '80', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/adilosman/.dbt', 'target_path': 'None', 'no_print': 'None', 'log_format': 'default', 'version_check': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'debug': 'False', 'log_path': '/Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/logs', 'partial_parse': 'True', 'invocation_command': 'dbt run --full-refresh', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'quiet': 'False', 'use_colors': 'True', 'write_json': 'True', 'indirect_selection': 'eager'}
+[0m15:50:20.304590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a2b3065a-764c-4349-9f5e-26ace6a785c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e40fd0>]}
+[0m15:50:20.422351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a2b3065a-764c-4349-9f5e-26ace6a785c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ea6c190>]}
+[0m15:50:20.423527 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m15:50:21.090030 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m15:50:21.572917 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:50:21.573771 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:50:21.666284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a2b3065a-764c-4349-9f5e-26ace6a785c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123dd5150>]}
+[0m15:50:21.820896 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m15:50:21.826919 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m15:50:21.912491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a2b3065a-764c-4349-9f5e-26ace6a785c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12417bfd0>]}
+[0m15:50:21.913859 [info ] [MainThread]: Found 5 models, 11 data tests, 1 source, 520 macros
+[0m15:50:21.914859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a2b3065a-764c-4349-9f5e-26ace6a785c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123dd5210>]}
+[0m15:50:21.919234 [info ] [MainThread]: 
+[0m15:50:21.920039 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:50:21.922197 [info ] [MainThread]: 
+[0m15:50:21.923666 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:50:21.941287 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics'
+[0m15:50:21.942354 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:50:21.952869 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pl-football-analytics'
+[0m15:50:21.954259 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:50:22.544676 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pl-football-analytics, now list_pl-football-analytics_football_analytics_football_analytics)
+[0m15:50:22.546400 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:50:22.548375 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pl-football-analytics, now list_pl-football-analytics_football_analytics_football_analytics_staging)
+[0m15:50:22.554896 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:50:22.911314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a2b3065a-764c-4349-9f5e-26ace6a785c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123dd6c10>]}
+[0m15:50:22.912457 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:50:22.924083 [debug] [Thread-1 (]: Began running node model.premier_league_analytics.stg_pl_matches
+[0m15:50:22.925239 [debug] [Thread-2 (]: Began running node model.premier_league_analytics.time_spine
+[0m15:50:22.926262 [info ] [Thread-1 (]: 1 of 5 START sql view model football_analytics_football_analytics_staging.stg_pl_matches  [RUN]
+[0m15:50:22.927598 [info ] [Thread-2 (]: 2 of 5 START sql table model football_analytics_football_analytics.mf_time_spine  [RUN]
+[0m15:50:22.928728 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pl-football-analytics_football_analytics_football_analytics, now model.premier_league_analytics.stg_pl_matches)
+[0m15:50:22.929581 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_pl-football-analytics_football_analytics_football_analytics_staging, now model.premier_league_analytics.time_spine)
+[0m15:50:22.930364 [debug] [Thread-1 (]: Began compiling node model.premier_league_analytics.stg_pl_matches
+[0m15:50:22.931067 [debug] [Thread-2 (]: Began compiling node model.premier_league_analytics.time_spine
+[0m15:50:22.965576 [debug] [Thread-1 (]: Writing injected SQL for node "model.premier_league_analytics.stg_pl_matches"
+[0m15:50:22.970859 [debug] [Thread-2 (]: Writing injected SQL for node "model.premier_league_analytics.time_spine"
+[0m15:50:22.977073 [debug] [Thread-1 (]: Began executing node model.premier_league_analytics.stg_pl_matches
+[0m15:50:23.001209 [debug] [Thread-2 (]: Began executing node model.premier_league_analytics.time_spine
+[0m15:50:23.048755 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:50:23.051667 [debug] [Thread-1 (]: Writing runtime sql for node "model.premier_league_analytics.stg_pl_matches"
+[0m15:50:23.091115 [debug] [Thread-1 (]: On model.premier_league_analytics.stg_pl_matches: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "node_id": "model.premier_league_analytics.stg_pl_matches"} */
+
+
+  create or replace view `pl-football-analytics`.`football_analytics_football_analytics_staging`.`stg_pl_matches`
+  OPTIONS()
+  as with raw as (
+
+    select
+      season,
+      round_number,
+      round_name,
+      match_num,
+      date,
+      time,
+      home_team_name,
+      home_team_code,
+      away_team_name,
+      away_team_code,
+      home_goals_ft,
+      away_goals_ft,
+      home_goals_ht,
+      away_goals_ht,
+      stadium_name,
+      city,
+      `group`
+    from `pl-football-analytics`.`football_raw`.`pl_matches`
+
+),
+
+typed as (
+
+    select
+      -- Create a stable ID
+      concat(season, '-', cast(match_num as string)) as match_id,
+
+      season,
+      safe_cast(split(season, '-')[offset(0)] as int64) as season_start_year,
+      safe_cast(split(season, '-')[offset(1)] as int64) as season_end_year,
+
+      round_number,
+      round_name,
+      match_num,
+      safe_cast(date as date) as match_date,
+      time as match_time,
+
+      home_team_name,
+      home_team_code,
+      away_team_name,
+      away_team_code,
+
+      safe_cast(home_goals_ft as int64) as home_goals,
+      safe_cast(away_goals_ft as int64) as away_goals,
+      safe_cast(home_goals_ht as int64) as home_goals_ht,
+      safe_cast(away_goals_ht as int64) as away_goals_ht,
+
+      stadium_name,
+      city,
+      `group` as round_group
+    from raw
+    where season is not null
+      and match_num is not null
+
+)
+
+select * from typed;
+
+
+[0m15:50:23.092480 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:50:23.411496 [debug] [Thread-2 (]: Writing runtime sql for node "model.premier_league_analytics.time_spine"
+[0m15:50:23.415036 [debug] [Thread-2 (]: On model.premier_league_analytics.time_spine: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "node_id": "model.premier_league_analytics.time_spine"} */
+
+  
+    
+
+    create or replace table `pl-football-analytics`.`football_analytics_football_analytics`.`mf_time_spine`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+-- Time spine for MetricFlow (daily grain).
+with spine as (
+  select day as date_day
+  from unnest(generate_date_array(date '2014-07-01', date '2025-06-30', interval 1 day)) as day
+)
+
+select * from spine
+    );
+  
+[0m15:50:23.647644 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:55b4960b-66a9-401b-b76d-4b5accdbd6d1&page=queryresults
+[0m15:50:23.665981 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:4845124a-682a-4c09-ac97-2c2d765c5bb2&page=queryresults
+[0m15:50:24.516551 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a2b3065a-764c-4349-9f5e-26ace6a785c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1241f6c90>]}
+[0m15:50:24.517702 [info ] [Thread-1 (]: 1 of 5 OK created sql view model football_analytics_football_analytics_staging.stg_pl_matches  [[32mCREATE VIEW (0 processed)[0m in 1.58s]
+[0m15:50:24.518664 [debug] [Thread-1 (]: Finished running node model.premier_league_analytics.stg_pl_matches
+[0m15:50:24.519468 [debug] [Thread-4 (]: Began running node model.premier_league_analytics.dim_team
+[0m15:50:24.520295 [info ] [Thread-4 (]: 3 of 5 START sql table model football_analytics_football_analytics.dim_team .... [RUN]
+[0m15:50:24.521295 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.premier_league_analytics.dim_team'
+[0m15:50:24.521864 [debug] [Thread-4 (]: Began compiling node model.premier_league_analytics.dim_team
+[0m15:50:24.526936 [debug] [Thread-4 (]: Writing injected SQL for node "model.premier_league_analytics.dim_team"
+[0m15:50:24.529410 [debug] [Thread-4 (]: Began executing node model.premier_league_analytics.dim_team
+[0m15:50:24.535415 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:50:24.852915 [debug] [Thread-4 (]: Writing runtime sql for node "model.premier_league_analytics.dim_team"
+[0m15:50:24.857413 [debug] [Thread-4 (]: On model.premier_league_analytics.dim_team: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "node_id": "model.premier_league_analytics.dim_team"} */
+
+  
+    
+
+    create or replace table `pl-football-analytics`.`football_analytics_football_analytics`.`dim_team`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with teams as (
+
+    select
+      home_team_name as team_name,
+      home_team_code as team_code
+    from `pl-football-analytics`.`football_analytics_football_analytics_staging`.`stg_pl_matches`
+
+    union distinct
+
+    select
+      away_team_name as team_name,
+      away_team_code as team_code
+    from `pl-football-analytics`.`football_analytics_football_analytics_staging`.`stg_pl_matches`
+
+),
+
+final as (
+
+    select
+      -- Deterministic ID so it stays stable across builds
+      to_hex(md5(lower(trim(team_name)))) as team_id,
+      team_name,
+      team_code
+    from teams
+
+)
+
+select * from final
+    );
+  
+[0m15:50:25.109078 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a2b3065a-764c-4349-9f5e-26ace6a785c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11062e110>]}
+[0m15:50:25.110472 [info ] [Thread-2 (]: 2 of 5 OK created sql table model football_analytics_football_analytics.mf_time_spine  [[32mCREATE TABLE (4.0k rows, 0 processed)[0m in 2.18s]
+[0m15:50:25.112257 [debug] [Thread-2 (]: Finished running node model.premier_league_analytics.time_spine
+[0m15:50:25.387531 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:38a1723a-3588-4d02-842b-700e7f32de02&page=queryresults
+[0m15:50:26.855269 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a2b3065a-764c-4349-9f5e-26ace6a785c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12455cb50>]}
+[0m15:50:26.857517 [info ] [Thread-4 (]: 3 of 5 OK created sql table model football_analytics_football_analytics.dim_team  [[32mCREATE TABLE (0.0 rows, 346.8 KiB processed)[0m in 2.33s]
+[0m15:50:26.859355 [debug] [Thread-4 (]: Finished running node model.premier_league_analytics.dim_team
+[0m15:50:26.860779 [debug] [Thread-1 (]: Began running node model.premier_league_analytics.fct_match_results
+[0m15:50:26.862646 [info ] [Thread-1 (]: 4 of 5 START sql table model football_analytics_football_analytics.fct_match_results  [RUN]
+[0m15:50:26.864563 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.stg_pl_matches, now model.premier_league_analytics.fct_match_results)
+[0m15:50:26.865532 [debug] [Thread-1 (]: Began compiling node model.premier_league_analytics.fct_match_results
+[0m15:50:26.872618 [debug] [Thread-1 (]: Writing injected SQL for node "model.premier_league_analytics.fct_match_results"
+[0m15:50:26.876018 [debug] [Thread-1 (]: Began executing node model.premier_league_analytics.fct_match_results
+[0m15:50:26.880392 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:50:27.148798 [debug] [Thread-1 (]: Writing runtime sql for node "model.premier_league_analytics.fct_match_results"
+[0m15:50:27.153362 [debug] [Thread-1 (]: On model.premier_league_analytics.fct_match_results: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "node_id": "model.premier_league_analytics.fct_match_results"} */
+
+  
+    
+
+    create or replace table `pl-football-analytics`.`football_analytics_football_analytics`.`fct_match_results`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with matches as (
+
+    select
+      m.*,
+      t_home.team_id as home_team_id,
+      t_away.team_id as away_team_id
+    from `pl-football-analytics`.`football_analytics_football_analytics_staging`.`stg_pl_matches` m
+    left join `pl-football-analytics`.`football_analytics_football_analytics`.`dim_team` t_home
+      on m.home_team_name = t_home.team_name
+    left join `pl-football-analytics`.`football_analytics_football_analytics`.`dim_team` t_away
+      on m.away_team_name = t_away.team_name
+
+),
+
+results as (
+
+    select
+      match_id,
+      season,
+      season_start_year,
+      season_end_year,
+      match_date,
+      round_number,
+      round_name,
+
+      home_team_id,
+      home_team_name,
+      away_team_id,
+      away_team_name,
+
+      home_goals,
+      away_goals,
+
+      case
+        when home_goals > away_goals then 'H'
+        when home_goals < away_goals then 'A'
+        when home_goals = away_goals then 'D'
+        else null
+      end as result,
+
+      case
+        when home_goals > away_goals then 3
+        when home_goals = away_goals then 1
+        else 0
+      end as home_points,
+
+      case
+        when away_goals > home_goals then 3
+        when home_goals = away_goals then 1
+        else 0
+      end as away_points
+    from matches
+
+)
+
+select * from results
+    );
+  
+[0m15:50:27.850959 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:81ff2938-f7f7-487d-95cc-447bba5e0cc0&page=queryresults
+[0m15:50:29.544835 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a2b3065a-764c-4349-9f5e-26ace6a785c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12452ca10>]}
+[0m15:50:29.547240 [info ] [Thread-1 (]: 4 of 5 OK created sql table model football_analytics_football_analytics.fct_match_results  [[32mCREATE TABLE (0.0 rows, 712.3 KiB processed)[0m in 2.68s]
+[0m15:50:29.549825 [debug] [Thread-1 (]: Finished running node model.premier_league_analytics.fct_match_results
+[0m15:50:29.552710 [debug] [Thread-2 (]: Began running node model.premier_league_analytics.fct_team_season_stats
+[0m15:50:29.555951 [info ] [Thread-2 (]: 5 of 5 START sql table model football_analytics_football_analytics.fct_team_season_stats  [RUN]
+[0m15:50:29.558986 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.premier_league_analytics.time_spine, now model.premier_league_analytics.fct_team_season_stats)
+[0m15:50:29.563613 [debug] [Thread-2 (]: Began compiling node model.premier_league_analytics.fct_team_season_stats
+[0m15:50:29.587673 [debug] [Thread-2 (]: Writing injected SQL for node "model.premier_league_analytics.fct_team_season_stats"
+[0m15:50:29.595050 [debug] [Thread-2 (]: Began executing node model.premier_league_analytics.fct_team_season_stats
+[0m15:50:29.603028 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:50:29.858012 [debug] [Thread-2 (]: Writing runtime sql for node "model.premier_league_analytics.fct_team_season_stats"
+[0m15:50:29.861822 [debug] [Thread-2 (]: On model.premier_league_analytics.fct_team_season_stats: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "premier_league_analytics", "target_name": "dev", "node_id": "model.premier_league_analytics.fct_team_season_stats"} */
+
+  
+    
+
+    create or replace table `pl-football-analytics`.`football_analytics_football_analytics`.`fct_team_season_stats`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with all_matches as (
+
+    select
+      season,
+      season_start_year,
+      season_end_year,
+      match_date,
+      home_team_id as team_id,
+      home_team_name as team_name,
+      'H' as venue,
+      home_goals as goals_for,
+      away_goals as goals_against,
+      home_points as points
+    from `pl-football-analytics`.`football_analytics_football_analytics`.`fct_match_results`
+
+    union all
+
+    select
+      season,
+      season_start_year,
+      season_end_year,
+      match_date,
+      away_team_id as team_id,
+      away_team_name as team_name,
+      'A' as venue,
+      away_goals as goals_for,
+      home_goals as goals_against,
+      away_points as points
+    from `pl-football-analytics`.`football_analytics_football_analytics`.`fct_match_results`
+
+),
+
+agg as (
+
+    select
+      team_id,
+      team_name,
+      season,
+      season_start_year,
+      season_end_year,
+
+      count(*) as matches_played,
+      sum(case when points = 3 then 1 else 0 end) as wins,
+      sum(case when points = 1 then 1 else 0 end) as draws,
+      sum(case when points = 0 then 1 else 0 end) as losses,
+
+      sum(goals_for) as goals_for,
+      sum(goals_against) as goals_against,
+      sum(goals_for - goals_against) as goal_diff,
+      sum(points) as points,
+
+      sum(case when venue = 'H' then 1 else 0 end) as home_matches,
+      sum(case when venue = 'A' then 1 else 0 end) as away_matches
+    from all_matches
+    group by
+      team_id,
+      team_name,
+      season,
+      season_start_year,
+      season_end_year
+)
+
+select
+  agg.*,
+  date(season_start_year, 8, 1) as season_start_date,
+  date(season_end_year, 5, 31) as season_end_date
+from agg
+    );
+  
+[0m15:50:30.356954 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pl-football-analytics&j=bq:EU:c3c15238-96a2-4abf-af1e-706614aea362&page=queryresults
+[0m15:50:31.831389 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a2b3065a-764c-4349-9f5e-26ace6a785c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1241f3ad0>]}
+[0m15:50:31.833161 [info ] [Thread-2 (]: 5 of 5 OK created sql table model football_analytics_football_analytics.fct_team_season_stats  [[32mCREATE TABLE (0.0 rows, 0 processed)[0m in 2.27s]
+[0m15:50:31.835484 [debug] [Thread-2 (]: Finished running node model.premier_league_analytics.fct_team_season_stats
+[0m15:50:31.839124 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:50:31.852439 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:50:31.853665 [debug] [MainThread]: Connection 'model.premier_league_analytics.fct_match_results' was properly closed.
+[0m15:50:31.854799 [debug] [MainThread]: Connection 'model.premier_league_analytics.fct_team_season_stats' was properly closed.
+[0m15:50:31.855930 [debug] [MainThread]: Connection 'model.premier_league_analytics.dim_team' was properly closed.
+[0m15:50:31.857297 [info ] [MainThread]: 
+[0m15:50:31.858282 [info ] [MainThread]: Finished running 4 table models, 1 view model in 0 hours 0 minutes and 9.93 seconds (9.93s).
+[0m15:50:31.860694 [debug] [MainThread]: Command end result
+[0m15:50:31.919729 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/manifest.json
+[0m15:50:31.923522 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/semantic_manifest.json
+[0m15:50:31.931813 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/adilosman/Desktop/premier-league-analytics-warehouse/dbt/target/run_results.json
+[0m15:50:31.932576 [info ] [MainThread]: 
+[0m15:50:31.933476 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:50:31.934277 [info ] [MainThread]: 
+[0m15:50:31.935088 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=5
+[0m15:50:31.956545 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 22.608452, "process_in_blocks": "0", "process_kernel_time": 2.695314, "process_mem_max_rss": "377839616", "process_out_blocks": "0", "process_user_time": 9.185819}
+[0m15:50:31.958598 [debug] [MainThread]: Command `dbt run` succeeded at 15:50:31.957546 after 22.61 seconds
+[0m15:50:31.959729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11153f950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11153ff10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cd07110>]}
+[0m15:50:31.960615 [debug] [MainThread]: Flushing usage events
+[0m15:50:32.358670 [debug] [MainThread]: An error was encountered while trying to flush usage events
