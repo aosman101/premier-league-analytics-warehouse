@@ -1,5 +1,14 @@
 # Premier League Analytics Warehouse (BigQuery + dbt)
 
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![dbt Core](https://img.shields.io/badge/dbt_Core-1.10-FF694B?logo=dbt&logoColor=white)](https://docs.getdbt.com/)
+[![dbt BigQuery adapter](https://img.shields.io/badge/dbt_adapter-BigQuery-4285F4?logo=googlebigquery&logoColor=white)](https://docs.getdbt.com/docs/core/connect-data-platform/bigquery-setup)
+[![Google BigQuery](https://img.shields.io/badge/Warehouse-BigQuery-1a73e8?logo=googlebigquery&logoColor=white)](https://cloud.google.com/bigquery)
+[![Data Source](https://img.shields.io/badge/Data-openfootball-0b8e4f)](https://github.com/openfootball/football.json)
+[![CI](https://github.com/aosman101/premier-league-analytics-warehouse/actions/workflows/dbt-bigquery.yml/badge.svg)](https://github.com/aosman101/premier-league-analytics-warehouse/actions/workflows/dbt-bigquery.yml)
+[![Coverage](https://img.shields.io/badge/coverage-not%20tracked-lightgrey)](#coverage)
+[![License](https://img.shields.io/badge/license-not%20declared-lightgrey)](#license)
+
 End-to-end football analytics on Google BigQuery with dbt. The stack pulls Premier League match JSON from openfootball, lands it in BigQuery, and builds cleaned staging + marts for teams, matches, and season stats.
 
 ## What’s here now
@@ -168,6 +177,12 @@ order by category, rank
 ```bash
 dbt build --profiles-dir ci --target ci
 ```
+
+## Coverage
+Coverage reporting is not tracked yet. Hook this repo to Codecov/Coveralls (for dbt test artifacts or Python tests) and update the badge once enabled.
+
+## License
+License has not been declared. Add a `LICENSE` file (MIT/Apache-2.0/etc.) to formalize usage rights and update the badge text if needed.
 
 ## Repository layout (high level)
 ```text
